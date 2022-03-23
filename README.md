@@ -1,2 +1,2 @@
-# samadtalukder.github.io
+# samadtalukder.com
 Samad Talukder Personal Website
