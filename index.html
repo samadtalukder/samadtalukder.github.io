@@ -687,7 +687,13 @@
     </footer>
     <!--/ Footer Section -->
 
-
+<script>
+        
+        fetch('https://bejewelled-daifuku-31168b.netlify.app/js/resume_data.json')
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error(error));
+    </script>
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/animatescroll.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
