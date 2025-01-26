@@ -2,6 +2,8 @@
   "about": {
     "name": "Samad Talukder",
     "title": "Android Developer",
+    "yearsExperience": "7+ Year's Experience",
+    "about": "Hello there! I'm Samad Talukder. I specialize in native android and flutter,\nand I'm deeply passionate and committed to my craft.\nWith 7 years of experience as a mobile application developer.",
     "typeWriter": [
       "Samad Talukder.",
       "An Android Developer.",
@@ -9,38 +11,28 @@
     ],
     "bio": "I'm a Bangladeshi based mobile app developer focused on crafting clean & user‑friendly\nmobile applications,\nI am passionate about building excellent software that improves the lives of those\naround me.",
     "email": "samadtalukdar6@gmail.com",
-    "mobile": "+60-1139219802",
     "profilePic": "profile_pic.png",
     "image": "https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/457279034_839506854833020_1839287487161076479_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeH4CGyM_hS40tUnacadWcYQOMDEprGKB3A4wMSmsYoHcOK9sqcdNnIoiJbb5J7hhzU98i06avGjL6JVRftfKu8T&_nc_ohc=Eg-rBuFEZy4Q7kNvgEZnsB1&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=AJr34V92mLR2bsClumWqK5f&oh=00_AYBImPVC_Bcwhh5m4ZrT_r2CSzS0efdiCF_gB8fIBTmrIg&oe=67916B28",
     "website": "http://www.samadtalukder.com/",
-    "address": "Kuala Lumpur, Malaysia",
-    "social": [
-      {
-        "platform": "linkedin",
-        "url": "https://www.linkedin.com/in/samadtalukder/",
-        "icon": "fa-linkedin"
-      },
-      {
-        "platform": "github",
-        "url": "https://github.com/samadtalukder",
-        "icon": "fa-github"
-      },
-      {
-        "platform": "medium",
-        "url": "https://medium.com/@samadtalukder",
-        "icon": "fa-medium"
-      },
-      {
-        "platform": "facebook",
-        "url": "https://facebook.com/samad.talukder.06/",
-        "icon": "fa-facebook"
-      }
-    ]
+    "address": "Kuala Lumpur, Malaysia"
   },
   "services": [
-    "App Development",
-    "Trainer",
-    "Photography"
+    {
+      "name": "App Development",
+      "image": "https://firebasestorage.googleapis.com/v0/b/webfirestore-dc43e.appspot.com/o/upload%2Fresume%2Fsoftware-development.png?alt=media&token=45cf360c-8609-40b1-bbf3-f838d4788ac2"
+    },
+    {
+      "name": "Web Development",
+      "image": "https://firebasestorage.googleapis.com/v0/b/webfirestore-dc43e.appspot.com/o/upload%2Fresume%2Flayers.png?alt=media&token=9a164e0a-3799-494c-a879-606b6d75411b"
+    },
+    {
+      "name": "Trainer",
+      "image": "https://firebasestorage.googleapis.com/v0/b/webfirestore-dc43e.appspot.com/o/upload%2Fresume%2Ftraining.png?alt=media&token=541ef239-31b7-44d4-8925-60394f7db47c"
+    },
+    {
+      "name": "Photography",
+      "image": "https://firebasestorage.googleapis.com/v0/b/webfirestore-dc43e.appspot.com/o/upload%2Fresume%2Fcamera.png?alt=media&token=35298f8b-87c3-4f43-8171-668e4209fd94"
+    }
   ],
   "skills": [
     {
@@ -49,15 +41,11 @@
     },
     {
       "name": "Flutter",
+      "rating": 80
+    },
+    {
+      "name": "KMP",
       "rating": 70
-    },
-    {
-      "name": "React",
-      "rating": 60
-    },
-    {
-      "name": "React",
-      "rating": 60
     },
     {
       "name": "React",
@@ -196,51 +184,88 @@
   "portfolio": [
     {
       "category": "Android",
-      "name": "My Sports App",
-      "image": "img/portfolio/mysports.jpg",
-      "url": "https://play.google.com/store/apps/details?id=net.livetechnologies.mysports"
-    },
-    {
-      "category": "Android",
-      "name": "Game On App",
-      "image": "img/portfolio/game_on.jpg",
-      "url": "https://play.google.com/store/apps/details?id=net.livemedia.gameon"
-    },
-    {
-      "category": "Android",
-      "name": "Cinematic App",
-      "image": "img/portfolio/Cinematic.jpg",
-      "url": "https://play.google.com/store/apps/details?id=net.live.ent.cinematic"
+      "name": "HLB Connect Singapore",
+      "image": "https://play-lh.googleusercontent.com/T95ned9FeFht6AUgWjP0rH7sy_c7cyDwIQjcu-xD_xp8-m2RuZ2oFE1E68PmUHB04IDQ=w480-h960-rw",
+      "url": "https://play.google.com/store/apps/details?id=sg.com.hongleongconnect.mobile"
     },
     {
       "category": "Flutter",
       "name": "Rokomari App",
-      "image": "img/portfolio/rokomari.jpg",
+      "image": "https://play-lh.googleusercontent.com/k2sRa0VN9SyyKZXg6r_dJKWUoMRzK2gKL5xOjFGD6axCRoveGo4bmzoZBj_RA6HGkA=s512-rw",
       "url": "https://play.google.com/store/apps/details?id=com.rokomari"
+    },
+    {
+      "category": "Android",
+      "name": "Robi MySports",
+      "image": "https://play-lh.googleusercontent.com/3w4q-hrFT8Qyn0WNkIZXsm_GVBFR3yCgXUd75w4f3SeogBnQV9oCYbqnnyQmK-m_jxM8=w480-h960-rw",
+      "url": "https://play.google.com/store/apps/details?id=net.livetechnologies.mysports"
+    },
+    {
+      "category": "Android",
+      "name": "Game On",
+      "image": "https://play-lh.googleusercontent.com/t2CPXoxOkOa0usqcLVvh-Wfd4BP2q2DFOmq-me55PyZhAsx711Po_FCGZWdqfOJ43A=w480-h960-rw",
+      "url": "https://play.google.com/store/apps/details?id=net.livemedia.gameon"
+    },
+    {
+      "category": "Android",
+      "name": "Cinematic",
+      "image": "https://play-lh.googleusercontent.com/L9xx0g_M9bM-PvoQ5fbdl_qxF0aYADTfoDcQ0DvL5icBqU33JeQ53yPYe8m12bmmyA=w480-h960-rw",
+      "url": "https://play.google.com/store/apps/details?id=net.live.ent.cinematic"
+    },
+    {
+      "category": "Android",
+      "name": "Najat",
+      "image": "https://play-lh.googleusercontent.com/oNerlKeLe2gxv9s2eVmgg03nMBeroHLR-SyYX0BhjjSDdDRuaL-OV3eTwWFvZBC0wH4=w480-h960-rw",
+      "url": "https://play.google.com/store/apps/details?id=bd.com.najat"
     }
   ],
   "blog": [
     {
       "category": "Android",
       "title": "Simple Android ExoPlayer & PIP mode",
-      "description": "PIP (Picture-in-Picture) mode is a feature in Android that allows users to watch a video in a small, movable window while performing other tasks on their device. This feature is supported by the ExoPlayer library, which is an open-source media player for Android.",
-      "image": "img/portfolio/mysports.jpg",
-      "url": "https://play.google.com/store/apps/details?id=net.livetechnologies.mysports",
-      "published_date": "2024-01-01"
+      "description": "PIP (Picture-in-Picture) mode is a feature in Android that allows users to watch a video in a small, movable window while performing other tasks on their device.",
+      "imageUrl": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*RnCPQZW6OLK-o-TkeeiVsQ.jpeg",
+      "blogUrl": "https://medium.com/@samadtalukder/implement-an-intro-onboarding-screen-in-android-jetpack-compose-9f464de08b43",
+      "published_date": "Sep 30, 2024"
     },
     {
       "category": "Android",
       "title": "Implement an Intro / Onboarding Screen in Android Jetpack Compose With Compose Foundation",
-      "description": "Let’s say, you have implemented an application, and now you want to highlight its key features at the initial stage. In that case, you can create an onboarding screen to highlight these features to the user. Also, get the required consent for app functionality from the user, it’ll be a more user-friendly experience. An onboarding screen with good design is the best impression, to make this process as simple and seamless as possible.",
-      "image": "img/portfolio/mysports.jpg",
-      "url": "https://play.google.com/store/apps/details?id=net.livetechnologies.mysports",
-      "published_date": "2024-01-01"
+      "description": "Let’s say, you have implemented an application, and now you want to highlight its key features at the initial stage.",
+      "imageUrl": "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*gVTy-p0UCu96bX4XB7TgbA.png",
+      "blogUrl": "https://medium.com/@samadtalukder/simple-android-exoplayer-pip-mode-dd4aad536269",
+      "published_date": "Dec 16, 2022"
     }
   ],
   "contact": {
     "email": "samadtalukdar6@gmail.com",
-    "message": "",
-    "latitude": "3.134338539065024",
-    "longitude": "101.68843757054297"
+    "mobile": "+60 1139219802",
+    "socialMedia": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/samadtalukder/",
+        "icon": "fab fa-linkedin-in"
+      },
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/samadtalukder",
+        "icon": "fab fa-github"
+      },
+      {
+        "platform": "X",
+        "url": "https://x.com/@samadtalukder",
+        "icon": "fab fa-x-twitter"
+      },
+      {
+        "platform": "Medium",
+        "url": "https://medium.com/@samadtalukder",
+        "icon": "fa-brands fa-medium"
+      },
+      {
+        "platform": "Stack Overflow",
+        "url": "https://stackoverflow.com/users/4713861/samad-talukder",
+        "icon": "fab fa-stack-overflow"
+      }
+    ]
   }
 }
