@@ -38,12 +38,13 @@ export default function ScrollReveal({
       opacity: 1,
       x: 0,
       y: 0,
-      transition: {
-        duration: 0.6,
-        delay,
-        ease: 'easeOut'
-      }
     },
+  };
+
+  const transition = {
+    duration: 0.6,
+    delay,
+    ease: 'easeOut' as const
   };
 
   return (
@@ -52,6 +53,7 @@ export default function ScrollReveal({
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
       variants={variants}
+      transition={transition}
       className={className}
     >
       {children}
