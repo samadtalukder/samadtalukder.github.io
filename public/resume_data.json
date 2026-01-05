@@ -1,0 +1,178 @@
+{
+   "about": {
+      "name": "Samad Talukder",
+      "title": "Android Developer",
+      "bio": "Hey there, I've been on the professional mobile application development journey since 2017 and am currently employed at Hong Leong Bank. I'm based out of Bangladesh and now living in Malaysia. I have hands-on experience in creating, developing, designing, and maintaining Android applications in the industry. Dedicated to continuous development and adapting to new technologies to maximize efficiency. I thrive in both independent projects and collaborative team settings.",
+      "email": "samadtalukdar6@gmail.com",
+      "mobile": "+60-1139219802",
+      "image": "img/me.jpg",
+      "website": "http://www.samadtalukder.com/",
+      "address": "Kuala Lumpur, Malaysia",
+      "social": [
+         {
+            "platform": "linkedin",
+            "url": "https://www.linkedin.com/in/samadtalukder/",
+            "icon": "fa-linkedin"
+         },
+         {
+            "platform": "github",
+            "url": "https://github.com/samadtalukder",
+            "icon": "fa-github"
+         },
+         {
+            "platform": "medium",
+            "url": "https://medium.com/@samadtalukder",
+            "icon": "fa-medium"
+         },
+         {
+            "platform": "facebook",
+            "url": "https://facebook.com/samad.talukder.06/",
+            "icon": "fa-facebook"
+         }
+      ]
+   },
+   "hireMe": [
+      "To Develop Apps",
+      "A Trainer"
+   ],
+   "skills": [
+      {
+         "name": "Android",
+         "percentage": 90
+      },
+      {
+         "name": "Flutter",
+         "percentage": 70
+      },
+      {
+         "name": "React",
+         "percentage": 60
+      }
+   ],
+   "experience": [
+      {
+         "position": "Software Developer (Android)",
+         "company": "Hong Leong Bank",
+         "startDate": "Feb 2022",
+         "endDate": "Present",
+         "responsibility": [
+            "Analyze, develop and maintain features and stability of banking solution for Android, using Kotlin.",
+            "Sprint planning with team members regarding projects and deadlines.",
+            "Supervise and interact with developers and QA in the team regarding project development and workflow.",
+            "Followed Git flow and maintained CI using Jenkins and GitLab CI.",
+            "Integrated FCM push notification service for multiple build variants."
+         ]
+      },
+      {
+         "position": "Android Developer",
+         "company": "Rokomari",
+         "description": "Developed in-house and production applications using Flutter and Java. Collaborated on sprint planning, implemented new features, fixed bugs, and maintained an internal delivery system app. Worked with the UI/UX designer, product manager, and business team.",
+         "startDate": "Aug 2021",
+         "endDate": "Jan 2022",
+         "responsibility": [
+            "Developed their in-house and production applications, using Flutter and Java.",
+            "Sprint planning with team members regarding upcoming projects and deadlines.",
+            "Implement new features and existing bug fixed.",
+            "Maintained the Android app for their internal delivery system.",
+            "Communicated with the UI/UX designer, product manager, business team."
+         ]
+      },
+      {
+         "position": "Android Developer",
+         "company": "Live Technologies Ltd",
+         "description": "Developed various applications for different clients using Java, Kotlin, and Flutter. Worked closely with designers, engineers, and product managers to deliver great user experiences. Integrated ExoPlayer for live streaming, implemented new features, and fixed bugs.",
+         "startDate": "Oct 2017",
+         "endDate": "Jul 2021",
+         "responsibility": [
+            "Developed various applications for different clients, using Java, Kotlin and Flutter.",
+            "Collaborated with designers, engineers, and product managers to build great experiences.",
+            "Communicated with the backend by using the REST API.",
+            "Integrated ExoPlayer to watch live streaming through the app.",
+            "Implement new features and existing bug fixed."
+         ]
+      }
+   ],
+   "education": [
+      {
+         "degree": "BSc in Computer Science and Engineering",
+         "institution": "Eastern University (BD)",
+         "startYear": 2017,
+         "endYear": 2020
+      },
+      {
+         "degree": "Diploma in Engineering",
+         "institution": "Feni Computer Institute",
+         "startYear": 2012,
+         "endYear": 2016
+      }
+   ],
+   "recommendations": [
+      {
+         "name": "Purendra Jha",
+         "company": "Hong Leong Bank Berhad",
+         "position": "Technical Lead",
+         "feedback": "Samad is an exceptionally proficient Android developer with a profound comprehension of the platform and its intricate details. His knowledge in Android and Kotlin significantly contributed to our team's success. I strongly endorse him for any Android development position.",
+         "created_at": "01/17/25, 02:21 AM"
+      },
+      {
+         "name": "Alen Pobhenrhaj Chandra Mohan",
+         "company": "Hong Leong Bank Berhad",
+         "position": "Android Developer",
+         "feedback": "I had the privilege of working under Samad. He was an excellent mentor and senior, always approachable, and guided me with patience and expertise. His technical knowledge and leadership skills were truly inspiring and lucrative. On top of that he has also proposed high end feasible features that came with long term scalability. I learned a lot from him and he's is truly a gem to know of.",
+         "created_at": "01/09/25, 10:39 AM"
+      },
+      {
+         "name": "Md. Shohel Rana",
+         "company": "Live Technologies ltd",
+         "position": "Senior Mobile App Developer",
+         "feedback": "He is very dedicated and fast leaner team player. He has good knowledge about Native Android, Kotlin, Flutter framework. So many apps developed with team and individual at Live Technologies Ltd. Wish to him for a good future.",
+         "created_at": "01/02/22, 08:04 AM"
+      },
+      {
+         "name": "Md Jahirul Islam",
+         "company": "Syntax Solution Limited",
+         "position": "Lead Software Engineer",
+         "feedback": "A person whom you can rely upon assigning tasks. He Makes works fun. Good team player. Mostly eager to learn technologies, which can boost his career and diversify his era of surfing. Wish him a very good future.",
+         "created_at": "12/15/21, 07:03 AM"
+      },
+      {
+         "name": "Nahid Mahmud",
+         "company": "FPT Software",
+         "position": "Machine Learning Engineer",
+         "feedback": "Samad was one of my closest junior colleagues. He is a lively and smart person. His expertise in Android Apps development enabled him to carry out complex and large scale projects. His ability to tackle difficult problems and a mindset for collaboration impressed me as well.",
+         "createdAt": "04/26/21, 05:49 PM"
+      }
+   ],
+   "portfolio": [
+      {
+         "category": "Android",
+         "name": "My Sports App",
+         "image": "img/portfolio/mysports.jpg",
+         "url": "https://play.google.com/store/apps/details?id=net.livetechnologies.mysports"
+      },
+      {
+         "category": "Android",
+         "name": "Game On App",
+         "image": "img/portfolio/game_on.jpg",
+         "url": "https://play.google.com/store/apps/details?id=net.livemedia.gameon"
+      },
+      {
+         "category": "Android",
+         "name": "Cinematic App",
+         "image": "img/portfolio/Cinematic.jpg",
+         "url": "https://play.google.com/store/apps/details?id=net.live.ent.cinematic"
+      },
+      {
+         "category": "Flutter",
+         "name": "Rokomari App",
+         "image": "img/portfolio/rokomari.jpg",
+         "url": "https://play.google.com/store/apps/details?id=com.rokomari"
+      }
+   ],
+   "contact": {
+      "email": "samadtalukdar6@gmail.com",
+      "message": "",
+      "latitude": "3.134338539065024",
+      "longitude": "101.68843757054297"
+   }
+}
