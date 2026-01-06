@@ -44,9 +44,9 @@ export default function Header() {
         }`}
       >
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between gap-4">
             <h1
-              className={`text-2xl font-bold ${
+              className={`text-lg sm:text-2xl font-bold truncate ${
                 isScrolled ? 'text-gray-800' : 'text-blue-600'
               }`}
             >
@@ -73,7 +73,8 @@ export default function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`md:hidden ${isScrolled ? 'text-gray-800' : 'text-white'}`}
+              className={`md:hidden flex-shrink-0 p-2 ${isScrolled ? 'text-gray-800' : 'text-blue-800'}`}
+              aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
