@@ -1,17 +1,15 @@
 # Samad Talukder Portfolio
 
-A modern, responsive portfolio website built with Next.js 16, TypeScript, and Tailwind CSS. This portfolio showcases professional experience, skills, projects, and provides an interactive way to connect.
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. This portfolio showcases professional experience, skills, projects, and provides an interactive way to connect.
 
 ## Features
 
-- **About Me Section** - Dynamic introduction with animated typing effects
+- **About Section** - Dynamic introduction with animated typing effects
 - **Hire Me Section** - Quick overview of services and availability
 - **Skills Section** - Comprehensive display of technical skills with proficiency levels
 - **Experience Section** - Professional work history and achievements
 - **Education Section** - Academic background and certifications
-- **Projects Section** - Showcase of complete apps and small projects
-  - Complete Apps: Production-ready applications with app store links
-  - Small Projects: Personal projects and experiments with GitHub links
+- **Portfolio Section** - Showcase of projects with interactive cards
 - **Recommendations Section** - Testimonials and client feedback
 - **Contact Section** - Interactive contact form with Google Maps integration
 - **Dark Mode** - Theme switching capability with next-themes
@@ -29,7 +27,6 @@ A modern, responsive portfolio website built with Next.js 16, TypeScript, and Ta
 - **Icons**: Lucide React
 - **Maps**: Google Maps (@vis.gl/react-google-maps)
 - **Carousel**: Embla Carousel
-- **Email**: Resend
 
 ## Getting Started
 
@@ -81,7 +78,7 @@ npm run start
 │   └── layout.tsx         # Root layout
 ├── components/
 │   ├── layout/            # Header, Footer
-│   ├── sections/          # Page sections (About Me, Skills, etc.)
+│   ├── sections/          # Page sections (Hero, Skills, etc.)
 │   ├── shared/            # Reusable components
 │   └── ui/                # UI primitives
 ├── lib/                   # Utility functions

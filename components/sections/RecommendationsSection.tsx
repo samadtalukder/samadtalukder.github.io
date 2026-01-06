@@ -35,21 +35,21 @@ export default function RecommendationsSection() {
             <div className="flex">
               {recommendations.map((rec, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0 px-4">
-                  <Card className="p-8 md:p-12 shadow-xl">
-                    <Quote className="w-12 h-12 text-blue-600 mb-6 opacity-30" />
+                  <Card className="p-8 md:p-12 shadow-xl min-h-[400px] flex flex-col">
+                    <Quote className="w-12 h-12 text-blue-600 mb-6 opacity-30 flex-shrink-0" />
 
-                    <p className="text-gray-700 text-lg leading-relaxed mb-8 italic">
+                    <p className="text-gray-700 text-lg leading-relaxed mb-8 italic flex-1 overflow-y-auto max-h-[240px]">
                       "{rec.feedback}"
                     </p>
 
-                    <div className="flex items-center gap-4">
-                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-white text-2xl font-bold">
+                    <div className="flex items-center gap-4 flex-shrink-0">
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">
                         {rec.name.charAt(0)}
                       </div>
-                      <div>
-                        <div className="font-bold text-gray-800 text-lg">{rec.name}</div>
-                        <div className="text-purple-600 font-medium">{rec.position}</div>
-                        <div className="text-gray-600 text-sm">{rec.company}</div>
+                      <div className="flex-1 min-w-0">
+                        <div className="font-bold text-gray-800 text-lg truncate">{rec.name}</div>
+                        <div className="text-purple-600 font-medium truncate">{rec.position}</div>
+                        <div className="text-gray-600 text-sm truncate">{rec.company}</div>
                       </div>
                     </div>
                   </Card>
