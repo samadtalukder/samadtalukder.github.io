@@ -47,7 +47,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-gray-400 text-center">
-            &copy; {new Date().getFullYear()} All rights Reserved.
+            &copy; Copyright {new Date().getFullYear()}. Made by Samad Talukder.
           </p>
         </div>
       </div>

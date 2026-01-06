@@ -16,7 +16,7 @@ const socialIcons: Record<string, any> = {
   'fa-facebook': Facebook,
 };
 
-export default function HeroSection() {
+export default function AboutMeSection() {
   return (
     <section id="about" className="min-h-screen flex items-center py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 relative overflow-hidden">
       <ParticlesBackground />
@@ -130,14 +130,6 @@ export default function HeroSection() {
                       <Phone className="w-5 h-5 text-blue-600" />
                       <span className="font-medium">Mobile:</span>
                       <span>{about.mobile}</span>
-                    </div>
-
-                    <div className="flex items-center gap-3 text-gray-700">
-                      <Globe className="w-5 h-5 text-blue-600" />
-                      <span className="font-medium">Website:</span>
-                      <a href={about.website} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                        {about.website}
-                      </a>
                     </div>
 
                     <div className="flex items-center gap-3 text-gray-700">

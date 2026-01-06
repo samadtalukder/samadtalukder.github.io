@@ -47,7 +47,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <h1
               className={`text-2xl font-bold ${
-                isScrolled ? 'text-gray-800' : 'text-white'
+                isScrolled ? 'text-gray-800' : 'text-blue-600'
               }`}
             >
               {about.name}
@@ -62,7 +62,7 @@ export default function Header() {
                   className={`font-medium transition-colors ${
                     isScrolled
                       ? 'text-gray-700 hover:text-blue-600'
-                      : 'text-white hover:text-blue-200'
+                      : 'text-gray-700 hover:text-blue-800'
                   }`}
                 >
                   {item.name}

@@ -52,7 +52,7 @@ export default function ContactSection() {
             <Card className="p-0 overflow-hidden h-full">
               <div className="relative h-full min-h-[400px]">
                 <iframe
-                  src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8614486897373!2d${contact.longitude}!3d${contact.latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDgnMDMuNiJOIDEwMcKwNDEnMTguNCJF!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s`}
+                  src={`https://www.google.com/maps?q=${contact.latitude},${contact.longitude}&hl=en&z=14&output=embed`}
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -63,7 +63,7 @@ export default function ContactSection() {
                 ></iframe>
                 <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-lg shadow-lg flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-blue-600" />
-                  <span className="font-medium text-gray-800">Kuala Lumpur, Malaysia</span>
+                  <span className="font-medium text-gray-800">Dhaka, Bangladesh</span>
                 </div>
               </div>
             </Card>

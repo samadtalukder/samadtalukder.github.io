@@ -1,6 +1,6 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import HeroSection from '@/components/sections/HeroSection';
+import AboutMeSection from '@/components/sections/AboutMeSection';
 import HireMeSection from '@/components/sections/HireMeSection';
 import SkillsSection from '@/components/sections/SkillsSection';
 import ExperienceSection from '@/components/sections/ExperienceSection';
@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Header />
       <main className="min-h-screen">
-        <HeroSection />
+        <AboutMeSection />
         <HireMeSection />
         <SkillsSection />
         <ExperienceSection />

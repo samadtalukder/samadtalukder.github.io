@@ -2,12 +2,11 @@
    "about": {
       "name": "Samad Talukder",
       "title": "Android Developer",
-      "bio": "Hey there, I've been on the professional mobile application development journey since 2017 and am currently employed at Hong Leong Bank. I'm based out of Bangladesh and now living in Malaysia. I have hands-on experience in creating, developing, designing, and maintaining Android applications in the industry. Dedicated to continuous development and adapting to new technologies to maximize efficiency. I thrive in both independent projects and collaborative team settings.",
+      "bio": "Hello, I'm Samad Talukder! \nI build mobile experiences that people actually want to use. From native to cross-platform solutions, I develop scalable mobile applications from scratch and transform them into modern user-friendly experiences. Whether it's Android, iOS, or hybrid apps, I can take your concept from idea to launch. I always strive to learn about the newest technologies and frameworks in the mobile ecosystem.",
       "email": "samadtalukdar6@gmail.com",
-      "mobile": "+60-1139219802",
+      "mobile": "+88 01792066848",
       "image": "img/me.jpg",
-      "website": "http://www.samadtalukder.com/",
-      "address": "Kuala Lumpur, Malaysia",
+      "address": "Dhaka, Bangladesh",
       "social": [
          {
             "platform": "linkedin",
@@ -172,7 +171,7 @@
    "contact": {
       "email": "samadtalukdar6@gmail.com",
       "message": "",
-      "latitude": "3.134338539065024",
-      "longitude": "101.68843757054297"
+      "latitude": "23.814051102787214",
+      "longitude": "90.41074650070342"
    }
 }
