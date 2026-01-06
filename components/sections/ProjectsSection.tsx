@@ -9,8 +9,7 @@ export default function ProjectsSection() {
     <section id="projects" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-4">Projects</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-12"></div>
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Projects</h2>
         </ScrollReveal>
 
         {/* Complete Apps Section */}

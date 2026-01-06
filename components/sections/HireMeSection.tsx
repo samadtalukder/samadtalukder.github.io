@@ -10,8 +10,7 @@ export default function HireMeSection() {
     <section id="hire-me" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-4">Hire Me</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-12"></div>
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Hire Me</h2>
         </ScrollReveal>
 
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">

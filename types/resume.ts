@@ -65,6 +65,15 @@ export interface Contact {
   longitude: string;
 }
 
+export interface BlogPost {
+  title: string;
+  description: string;
+  url: string;
+  date: string;
+  image?: string;
+  tags?: string[];
+}
+
 export interface ResumeData {
   about: About;
   hireMe: string[];
@@ -73,5 +82,6 @@ export interface ResumeData {
   education: Education[];
   recommendations: Recommendation[];
   projects: Projects;
+  blog: BlogPost[];
   contact: Contact;
 }

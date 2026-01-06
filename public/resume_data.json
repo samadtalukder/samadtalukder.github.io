@@ -197,6 +197,24 @@
          }
       ]
    },
+   "blog": [
+      {
+         "title": "Implement an Intro / Onboarding Screen in Android Jetpack Compose With Compose Foundation",
+         "description": " An onboarding screen with good design is the best impression, to make this process as simple and seamless as possible.",
+         "url": "https://medium.com/@samadtalukder/implement-an-intro-onboarding-screen-in-android-jetpack-compose-9f464de08b43",
+         "date": "Sep 30, 2024",
+         "image": "img/blog/blog-1.jpg",
+         "tags": ["Android", "Kotlin", "Compose"]
+      },
+      {
+         "title": "Simple Android ExoPlayer & PIP mode",
+         "description": "ExoPlayer is an open-source media player for Android that is developed by Google.",
+         "url": "https://medium.com/@samadtalukder/simple-android-exoplayer-pip-mode-dd4aad536269",
+         "date": "Dec 15, 2022",
+         "image": "img/blog/blog-1.jpg",
+         "tags": ["Android", "Exo Player"]
+      }
+   ],
    "contact": {
       "email": "samadtalukdar6@gmail.com",
       "message": "",

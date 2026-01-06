@@ -1,127 +1,42 @@
 'use client';
 
-import { useState } from 'react';
-import { contact } from '@/lib/data';
 import ScrollReveal from '@/components/animations/ScrollReveal';
 import { Card } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Button } from '@/components/ui/button';
-import { Send, MapPin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 export default function ContactSection() {
-  const [formData, setFormData] = useState({ email: '', message: '' });
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus('loading');
-
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setStatus('success');
-        setFormData({ email: '', message: '' });
-        setTimeout(() => setStatus('idle'), 5000);
-      } else {
-        setStatus('error');
-        setTimeout(() => setStatus('idle'), 5000);
-      }
-    } catch (error) {
-      setStatus('error');
-      setTimeout(() => setStatus('idle'), 5000);
-    }
-  };
-
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-4">Contact</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-12"></div>
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Contact</h2>
         </ScrollReveal>
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-          {/* Map Section */}
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+          {/* Message Section */}
           <ScrollReveal delay={0.2}>
-            <Card className="p-0 overflow-hidden h-full">
-              <div className="relative h-full min-h-[400px]">
-                <iframe
-                  src={`https://www.google.com/maps?q=${contact.latitude},${contact.longitude}&hl=en&z=14&output=embed`}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="absolute inset-0"
-                ></iframe>
-                <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-lg shadow-lg flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-blue-600" />
-                  <span className="font-medium text-gray-800">Dhaka, Bangladesh</span>
-                </div>
-              </div>
-            </Card>
+            <div className="text-gray-700 text-lg leading-relaxed">
+              <p>
+                I'm interested in freelance opportunities. However, if you have other request or question, don't hesitate to contact me
+              </p>
+            </div>
           </ScrollReveal>
 
-          {/* Contact Form */}
+          {/* Email Card */}
           <ScrollReveal delay={0.3}>
-            <Card className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <Input
-                    type="email"
-                    placeholder="Your Email"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
-                    className="w-full"
-                  />
+            <Card className="p-8 bg-white hover:shadow-lg transition-shadow duration-300">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
+                  <Mail className="w-8 h-8 text-white" />
                 </div>
-
-                <div>
-                  <Textarea
-                    placeholder="Your Message"
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    required
-                    rows={6}
-                    className="w-full"
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  disabled={status === 'loading'}
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                <h3 className="text-2xl font-bold text-gray-800">Message me here</h3>
+                <a
+                  href="mailto:samadtalukdar6@gmail.com"
+                  className="text-blue-600 hover:text-blue-800 font-medium text-lg transition-colors"
                 >
-                  {status === 'loading' ? (
-                    'Sending...'
-                  ) : (
-                    <>
-                      <Send className="w-4 h-4 mr-2" />
-                      Send Message
-                    </>
-                  )}
-                </Button>
-
-                {status === 'success' && (
-                  <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
-                    Message sent successfully! I'll get back to you soon.
-                  </div>
-                )}
-
-                {status === 'error' && (
-                  <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">
-                    Failed to send message. Please try again or email me directly at {contact.email}
-                  </div>
-                )}
-              </form>
+                  samadtalukdar6@gmail.com
+                </a>
+              </div>
             </Card>
           </ScrollReveal>
         </div>

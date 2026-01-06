@@ -8,8 +8,7 @@ export default function SkillsSection() {
     <section id="skills" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-4">Skills</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-12"></div>
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Skills</h2>
         </ScrollReveal>
 
         <ScrollReveal delay={0.2}>
