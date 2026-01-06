@@ -142,32 +142,61 @@
          "createdAt": "04/26/21, 05:49 PM"
       }
    ],
-   "portfolio": [
-      {
-         "category": "Android",
-         "name": "My Sports App",
-         "image": "img/portfolio/mysports.jpg",
-         "url": "https://play.google.com/store/apps/details?id=net.livetechnologies.mysports"
-      },
-      {
-         "category": "Android",
-         "name": "Game On App",
-         "image": "img/portfolio/game_on.jpg",
-         "url": "https://play.google.com/store/apps/details?id=net.livemedia.gameon"
-      },
-      {
-         "category": "Android",
-         "name": "Cinematic App",
-         "image": "img/portfolio/Cinematic.jpg",
-         "url": "https://play.google.com/store/apps/details?id=net.live.ent.cinematic"
-      },
-      {
-         "category": "Flutter",
-         "name": "Rokomari App",
-         "image": "img/portfolio/rokomari.jpg",
-         "url": "https://play.google.com/store/apps/details?id=com.rokomari"
-      }
-   ],
+   "projects": {
+      "completeApps": [
+         {
+            "name": "HLB Connect Singapore",
+            "image": "img/portfolio/hlbank.png",
+            "url": "https://play.google.com/store/apps/details?id=sg.com.hongleongconnect.mobile",
+            "description": "Banking app for Hong Leong Bank Singapore",
+            "category": "Android"
+         },
+         {
+            "name": "My Sports App",
+            "image": "img/portfolio/mysports.jpg",
+            "url": "https://play.google.com/store/apps/details?id=net.livetechnologies.mysports",
+            "description": "Sports streaming and live updates application",
+            "category": "Android"
+         },
+         {
+            "name": "Game On App",
+            "image": "img/portfolio/game_on.jpg",
+            "url": "https://play.google.com/store/apps/details?id=net.livemedia.gameon",
+            "description": "Gaming news and live streaming platform",
+            "category": "Android"
+         },
+         {
+            "name": "Cinematic App",
+            "image": "img/portfolio/Cinematic.jpg",
+            "url": "https://play.google.com/store/apps/details?id=net.live.ent.cinematic",
+            "description": "Movie streaming and entertainment app",
+            "category": "Android"
+         },
+         {
+            "name": "Rokomari App",
+            "image": "img/portfolio/rokomari.png",
+            "url": "https://play.google.com/store/apps/details?id=com.rokomari",
+            "description": "E-commerce platform for books in Bangladesh",
+            "category": "Flutter"
+         }
+      ],
+      "smallProjects": [
+         {
+            "name": "Jetpack Awesome UI",
+            "image": "img/portfolio/portfolio.png",
+            "url": "https://github.com/samadtalukder/Jetpack-Awesome-UI",
+            "description": "Simple weather forecast application",
+            "category": "Android"
+         },
+         {
+            "name": "Flutter Clean Architecture With Bloc (Cubit)",
+            "image": "img/portfolio/portfolio.png",
+            "url": "https://github.com/samadtalukder/Flutter-Clean-Architecture-With-Bloc-Cubit",
+            "description": "Flutter Clean Architecture With Bloc (Cubit)",
+            "category": "Flutter"
+         }
+      ]
+   },
    "contact": {
       "email": "samadtalukdar6@gmail.com",
       "message": "",

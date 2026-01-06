@@ -9,7 +9,9 @@ A modern, responsive portfolio website built with Next.js 16, TypeScript, and Ta
 - **Skills Section** - Comprehensive display of technical skills with proficiency levels
 - **Experience Section** - Professional work history and achievements
 - **Education Section** - Academic background and certifications
-- **Portfolio Section** - Showcase of projects with interactive cards
+- **Projects Section** - Showcase of complete apps and small projects
+  - Complete Apps: Production-ready applications with app store links
+  - Small Projects: Personal projects and experiments with GitHub links
 - **Recommendations Section** - Testimonials and client feedback
 - **Contact Section** - Interactive contact form with Google Maps integration
 - **Dark Mode** - Theme switching capability with next-themes

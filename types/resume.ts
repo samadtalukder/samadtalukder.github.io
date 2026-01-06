@@ -11,7 +11,6 @@ export interface About {
   email: string;
   mobile: string;
   image: string;
-  website: string;
   address: string;
   social: SocialLink[];
 }
@@ -46,11 +45,17 @@ export interface Recommendation {
   createdAt?: string;
 }
 
-export interface PortfolioItem {
-  category: string;
+export interface ProjectItem {
   name: string;
   image: string;
   url: string;
+  description: string;
+  category: string;
+}
+
+export interface Projects {
+  completeApps: ProjectItem[];
+  smallProjects: ProjectItem[];
 }
 
 export interface Contact {
@@ -67,6 +72,6 @@ export interface ResumeData {
   experience: Experience[];
   education: Education[];
   recommendations: Recommendation[];
-  portfolio: PortfolioItem[];
+  projects: Projects;
   contact: Contact;
 }

@@ -3,7 +3,7 @@ import type { ResumeData } from '@/types/resume';
 
 export const resumeData = resumeDataJson as ResumeData;
 
-export const { about, hireMe, skills, experience, education, recommendations, portfolio, contact } = resumeData;
+export const { about, hireMe, skills, experience, education, recommendations, projects, contact } = resumeData;
 
 // Helper function to get formatted date
 export const getRecommendations = () => {

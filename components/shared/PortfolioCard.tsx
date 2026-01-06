@@ -11,9 +11,10 @@ interface PortfolioCardProps {
   category: string;
   image: string;
   url: string;
+  description?: string;
 }
 
-export default function PortfolioCard({ name, category, image, url }: PortfolioCardProps) {
+export default function PortfolioCard({ name, category, image, url, description }: PortfolioCardProps) {
   return (
     <motion.div
       layout
@@ -21,10 +22,11 @@ export default function PortfolioCard({ name, category, image, url }: PortfolioC
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.8 }}
       transition={{ duration: 0.3 }}
+      className="h-full"
     >
-      <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer">
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          <div className="relative h-64 overflow-hidden">
+      <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer h-full flex flex-col">
+        <a href={url} target="_blank" rel="noopener noreferrer" className="h-full flex flex-col">
+          <div className="relative h-48 overflow-hidden flex-shrink-0">
             <Image
               src={`/images/${image.replace('img/', '')}`}
               alt={name}
@@ -38,11 +40,14 @@ export default function PortfolioCard({ name, category, image, url }: PortfolioC
               </div>
             </div>
           </div>
-          <div className="p-6">
-            <div className="flex items-center justify-between mb-2">
-              <h3 className="text-xl font-bold text-gray-800">{name}</h3>
-              <Badge variant="secondary" className="capitalize">{category}</Badge>
+          <div className="p-6 flex-1 flex flex-col">
+            <div className="flex items-start gap-3 mb-2">
+              <h3 className="text-lg font-bold text-gray-800 flex-1 line-clamp-2">{name}</h3>
+              <Badge variant="secondary" className="capitalize text-xs flex-shrink-0">{category}</Badge>
             </div>
+            {description && (
+              <p className="text-gray-600 text-sm mt-2 line-clamp-2">{description}</p>
+            )}
           </div>
         </a>
       </Card>
