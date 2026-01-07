@@ -72,7 +72,7 @@ export default function AboutMeSection() {
               className="flex flex-wrap items-center gap-3 sm:gap-4"
             >
               <Button
-                className="bg-[#FD853A] hover:bg-[#fc7422] text-white px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base font-medium rounded"
+                className="bg-[#FD853A] hover:bg-[#fc7422] text-white px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base font-medium rounded-full"
                 size="lg"
                 asChild
               >
@@ -90,9 +90,9 @@ export default function AboutMeSection() {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 rounded-full border-2 border-gray-700 hover:border-[#FD853A] hover:bg-gray-800 flex items-center justify-center transition-all hover:scale-110 text-gray-400 hover:text-[#FD853A]"
+                    className="w-10 h-10 rounded-full border-2 border-gray-700 hover:border-[#FD853A] hover:bg-gray-800 flex items-center justify-center transition-all hover:scale-110 text-gray-400 hover:text-[#FD853A]"
                   >
-                    <Icon className="w-5 h-5" />
+                    <Icon className="w-4 h-4" />
                   </a>
                 );
               })}

@@ -36,7 +36,7 @@ export default function ServicesSection() {
             const Icon = service.icon;
             return (
               <ScrollReveal key={service.title} delay={0.1 * index}>
-                <Card className="p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 h-full flex flex-col">
+                <Card className="p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 h-full flex flex-col items-center text-center">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#FD853A] to-[#fc7422] flex items-center justify-center mb-6">
                     <Icon className="w-8 h-8 text-white" />
                   </div>
