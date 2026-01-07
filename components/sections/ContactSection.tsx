@@ -1,8 +1,9 @@
 'use client';
 
+import { contact, about } from '@/lib/data';
 import ScrollReveal from '@/components/animations/ScrollReveal';
 import { Card } from '@/components/ui/card';
-import { Mail } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 
 export default function ContactSection() {
   return (
@@ -12,30 +13,81 @@ export default function ContactSection() {
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Contact</h2>
         </ScrollReveal>
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-          {/* Message Section */}
-          <ScrollReveal delay={0.2}>
-            <div className="text-gray-700 text-lg leading-relaxed">
-              <p>
-                I'm interested in freelance opportunities. However, if you have other request or question, don't hesitate to contact me
-              </p>
-            </div>
+        {/* Message Section */}
+        <ScrollReveal delay={0.2}>
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <p className="text-gray-700 text-lg leading-relaxed">
+              I'm interested in freelance opportunities. However, if you have other request or question, don't hesitate to contact me
+            </p>
+          </div>
+        </ScrollReveal>
+
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+          {/* Map Section */}
+          <ScrollReveal delay={0.3}>
+            <Card className="p-0 overflow-hidden h-full">
+              <div className="relative h-full min-h-[400px]">
+                <iframe
+                  src={`https://www.google.com/maps?q=${contact.latitude},${contact.longitude}&hl=en&z=14&output=embed`}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="absolute inset-0"
+                ></iframe>
+                <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-lg shadow-lg flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-[#FD853A]" />
+                  <span className="font-medium text-gray-800">Dhaka, Bangladesh</span>
+                </div>
+              </div>
+            </Card>
           </ScrollReveal>
 
-          {/* Email Card */}
-          <ScrollReveal delay={0.3}>
-            <Card className="p-8 bg-white hover:shadow-lg transition-shadow duration-300">
-              <div className="flex flex-col items-center text-center space-y-4">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
-                  <Mail className="w-8 h-8 text-white" />
+          {/* Contact Info Card */}
+          <ScrollReveal delay={0.4}>
+            <Card className="p-8 bg-white hover:shadow-lg transition-shadow duration-300 h-full flex items-center">
+              <div className="w-full space-y-6">
+                <h3 className="text-2xl font-bold text-gray-800 mb-6">Message me here</h3>
+
+                {/* Mobile Number */}
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-[#FD853A] rounded-full flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="text-left">
+                    <h4 className="text-sm font-semibold text-gray-600 mb-1">Mobile no</h4>
+                    <p className="text-gray-800 font-medium">{about.mobile}</p>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800">Message me here</h3>
-                <a
-                  href="mailto:samadtalukdar6@gmail.com"
-                  className="text-blue-600 hover:text-blue-800 font-medium text-lg transition-colors"
-                >
-                  samadtalukdar6@gmail.com
-                </a>
+
+                {/* Email */}
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-[#FD853A] rounded-full flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="text-left">
+                    <h4 className="text-sm font-semibold text-gray-600 mb-1">Email</h4>
+                    <a
+                      href={`mailto:${about.email}`}
+                      className="text-gray-800 font-medium hover:text-[#FD853A] transition-colors break-all"
+                    >
+                      {about.email}
+                    </a>
+                  </div>
+                </div>
+
+                {/* Location */}
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-[#FD853A] rounded-full flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="text-left">
+                    <h4 className="text-sm font-semibold text-gray-600 mb-1">Location</h4>
+                    <p className="text-gray-800 font-medium">{about.address}</p>
+                  </div>
+                </div>
               </div>
             </Card>
           </ScrollReveal>

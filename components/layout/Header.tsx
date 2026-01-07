@@ -6,7 +6,7 @@ import { about } from '@/lib/data';
 
 const navItems = [
   { name: 'About', href: '#about' },
-  { name: 'Skills', href: '#skills' },
+  // { name: 'Skills', href: '#skills' },
   { name: 'Experience', href: '#experience' },
   { name: 'Education', href: '#education' },
   { name: 'Projects', href: '#projects' },
@@ -48,7 +48,7 @@ export default function Header() {
           <div className="flex items-center justify-between gap-4">
             <h1
               className={`text-lg sm:text-2xl font-bold truncate ${
-                isScrolled ? 'text-gray-800' : 'text-blue-600'
+                isScrolled ? 'text-[#171717]' : 'text-[#171717]'
               }`}
             >
               {about.name}
@@ -62,8 +62,8 @@ export default function Header() {
                   onClick={() => scrollToSection(item.href)}
                   className={`font-medium transition-colors ${
                     isScrolled
-                      ? 'text-gray-700 hover:text-blue-600'
-                      : 'text-gray-700 hover:text-blue-800'
+                      ? 'text-[#171717] hover:text-[#FD853A]'
+                      : 'text-[#171717] hover:text-[#FD853A]'
                   }`}
                 >
                   {item.name}
@@ -74,7 +74,7 @@ export default function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`md:hidden flex-shrink-0 p-2 ${isScrolled ? 'text-gray-800' : 'text-blue-800'}`}
+              className={`md:hidden flex-shrink-0 p-2 ${isScrolled ? 'text-[#FD853A]' : 'text-[#FD853A]'}`}
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -91,7 +91,7 @@ export default function Header() {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-2xl font-medium text-gray-800 hover:text-blue-600 transition-colors"
+                className="text-2xl font-medium text-[#171717] hover:text-[#FD853A] transition-colors"
               >
                 {item.name}
               </button>

@@ -40,7 +40,7 @@ export default function Footer() {
           {/* Back to Top Button */}
           <button
             onClick={scrollToTop}
-            className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 flex items-center justify-center transition-all hover:scale-110 shadow-lg"
+            className="w-12 h-12 rounded-full bg-[#FD853A] hover:bg-[#fc7422] flex items-center justify-center transition-all hover:scale-110 shadow-lg"
           >
             <ArrowUp className="w-5 h-5" />
           </button>

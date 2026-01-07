@@ -1,9 +1,8 @@
 'use client';
 
-import { blog } from '@/lib/data';
+import { blog, about } from '@/lib/data';
 import ScrollReveal from '@/components/animations/ScrollReveal';
-import { Card } from '@/components/ui/card';
-import { Calendar, ExternalLink } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
 
 export default function BlogSection() {
@@ -17,50 +16,50 @@ export default function BlogSection() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blog.map((post, index) => (
             <ScrollReveal key={post.title} delay={0.1 * (index + 1)}>
-              <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer h-full flex flex-col">
-                <a href={post.url} target="_blank" rel="noopener noreferrer" className="h-full flex flex-col">
+              <a href={post.url} target="_blank" rel="noopener noreferrer" className="h-full flex flex-col group transition-transform duration-300 hover:-translate-y-2">
                   {post.image && (
-                    <div className="relative h-48 overflow-hidden flex-shrink-0">
-                      <Image
-                        src={`/images/${post.image.replace('img/', '')}`}
-                        alt={post.title}
-                        fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-300"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-8">
-                        <div className="flex items-center gap-2 text-white font-semibold">
-                          <span>Read More</span>
-                          <ExternalLink className="w-5 h-5" />
+                    <div className="relative h-72 overflow-visible flex-shrink-0">
+                      <div className="relative h-72 overflow-hidden rounded-t-3xl">
+                        <Image
+                          src={`/images/${post.image.replace('img/', '')}`}
+                          alt={post.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        {/* Curved cutout effect in bottom right */}
+                        <div className="absolute bottom-0 right-0 w-32 h-32 bg-gray-50"
+                             style={{ borderTopLeftRadius: '100%' }}></div>
+                      </div>
+                      <div className="absolute bottom-4 right-4 z-10">
+                        <div className="w-16 h-16 bg-[#FD853A] rounded-full flex items-center justify-center group-hover:bg-[#1e293b] transition-colors duration-300 shadow-lg">
+                          <ArrowUpRight className="w-7 h-7 text-white" />
                         </div>
                       </div>
                     </div>
                   )}
-                  <div className="p-6 flex flex-col flex-grow">
-                    <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
-                      <Calendar className="w-4 h-4" />
-                      <span>{post.date}</span>
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-800 mb-3 line-clamp-2">
-                      {post.title}
-                    </h3>
-                    <p className="text-gray-600 mb-4 flex-grow line-clamp-2">
-                      {post.description}
-                    </p>
+                  <div className="p-6 flex flex-col flex-grow rounded-b-3xl shadow-lg  transition-shadow duration-300">
                     {post.tags && post.tags.length > 0 && (
-                      <div className="flex flex-wrap gap-2">
-                        {post.tags.map((tag) => (
-                          <span
-                            key={tag}
-                            className="text-xs px-2 py-1 bg-blue-100 text-blue-600 rounded-full"
-                          >
-                            {tag}
-                          </span>
-                        ))}
+                      <div className="mb-4">
+                        <span className="inline-block px-4 py-2 bg-gray-100 text-gray-700 rounded-2xl text-sm font-medium">
+                          {post.tags[0]}
+                        </span>
                       </div>
                     )}
+                    <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
+                      <div className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-[#FD853A] rounded-full"></span>
+                        <span className="font-medium">{about.name}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-[#FD853A] rounded-full"></span>
+                        <span>{post.date}</span>
+                      </div>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-800 leading-relaxed line-clamp-2">
+                      {post.title}
+                    </h3>
                   </div>
                 </a>
-              </Card>
             </ScrollReveal>
           ))}
         </div>

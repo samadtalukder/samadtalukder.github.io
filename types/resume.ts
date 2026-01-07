@@ -17,7 +17,8 @@ export interface About {
 
 export interface Skill {
   name: string;
-  percentage: number;
+  icon: string;
+  color: string;
 }
 
 export interface Experience {

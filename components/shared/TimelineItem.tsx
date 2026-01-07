@@ -25,16 +25,16 @@ export default function TimelineItem({ title, subtitle, period, description, ind
     >
       {/* Content */}
       <div className="flex-1">
-        <Card className={`p-6 shadow-lg hover:shadow-xl transition-shadow ${isLeft ? 'md:text-right' : 'md:text-left'}`}>
-          <div className="flex items-center gap-2 mb-2 text-blue-600 font-semibold">
+        <Card className={`p-6 shadow-lg hover:shadow-xl transition-shadow ${isLeft ? 'md:text-left' : 'md:text-left'}`}>
+          <div className="flex items-center gap-2 mb-2 text-[#FD853A] font-semibold">
             <Calendar className="w-4 h-4" />
             <span className="text-sm">{period}</span>
           </div>
           <h3 className="text-xl font-bold text-gray-800 mb-1">{title}</h3>
-          <p className="text-purple-600 font-medium mb-3">{subtitle}</p>
+          <p className="text-[#FD853A] font-medium mb-3">{subtitle}</p>
 
           {description && (
-            <div className={`text-gray-600 space-y-2 ${isLeft ? 'md:text-right' : 'md:text-left'}`}>
+            <div className={`text-gray-600 space-y-2 ${isLeft ? 'md:text-left' : 'md:text-left'}`}>
               {Array.isArray(description) ? (
                 <ul className="list-disc list-inside space-y-1">
                   {description.map((item, idx) => (
@@ -51,8 +51,8 @@ export default function TimelineItem({ title, subtitle, period, description, ind
 
       {/* Center dot */}
       <div className="relative flex items-center justify-center">
-        <div className="absolute w-px h-full bg-gradient-to-b from-blue-400 to-purple-400"></div>
-        <div className="relative z-10 w-4 h-4 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 border-4 border-white shadow-lg"></div>
+        <div className="absolute w-px h-full bg-[#FD853A]/30"></div>
+        <div className="relative z-10 w-4 h-4 rounded-full bg-[#FD853A] border-4 border-white shadow-lg"></div>
       </div>
 
       {/* Spacer for opposite side */}

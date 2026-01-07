@@ -5,7 +5,7 @@
       "bio": "Hello, I'm Samad Talukder! \nI build mobile experiences that people actually want to use. From native to cross-platform solutions, I develop scalable mobile applications from scratch and transform them into modern user-friendly experiences. Whether it's Android, iOS, or hybrid apps, I can take your concept from idea to launch. I always strive to learn about the newest technologies and frameworks in the mobile ecosystem.",
       "email": "samadtalukdar6@gmail.com",
       "mobile": "+88 01792066848",
-      "image": "img/me.jpg",
+      "image": "img/me.png",
       "address": "Dhaka, Bangladesh",
       "social": [
          {
@@ -37,15 +37,83 @@
    "skills": [
       {
          "name": "Android",
-         "percentage": 90
+         "icon": "android",
+         "color": "#3DDC84"
+      },
+      {
+         "name": "Kotlin",
+         "icon": "kotlin",
+         "color": "#7F52FF"
+      },
+      {
+         "name": "Java",
+         "icon": "java",
+         "color": "#007396"
+      },
+      {
+         "name": "Jetpack Compose",
+         "icon": "jetpackcompose",
+         "color": "#4285F4"
       },
       {
          "name": "Flutter",
-         "percentage": 70
+         "icon": "flutter",
+         "color": "#02569B"
+      },
+      {
+         "name": "Dart",
+         "icon": "dart",
+         "color": "#0175C2"
       },
       {
          "name": "React",
-         "percentage": 60
+         "icon": "react",
+         "color": "#61DAFB"
+      },
+      {
+         "name": "React Native",
+         "icon": "react",
+         "color": "#61DAFB"
+      },
+      {
+         "name": "JavaScript",
+         "icon": "javascript",
+         "color": "#F7DF1E"
+      },
+      {
+         "name": "TypeScript",
+         "icon": "typescript",
+         "color": "#3178C6"
+      },
+      {
+         "name": "Git",
+         "icon": "git",
+         "color": "#F05032"
+      },
+      {
+         "name": "GitLab",
+         "icon": "gitlab",
+         "color": "#FC6D26"
+      },
+      {
+         "name": "Jenkins",
+         "icon": "jenkins",
+         "color": "#D24939"
+      },
+      {
+         "name": "Firebase",
+         "icon": "firebase",
+         "color": "#FFCA28"
+      },
+      {
+         "name": "Material Design",
+         "icon": "materialdesign",
+         "color": "#757575"
+      },
+      {
+         "name": "Gradle",
+         "icon": "gradle",
+         "color": "#02303A"
       }
    ],
    "experience": [
