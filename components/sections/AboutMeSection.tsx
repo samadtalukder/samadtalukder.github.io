@@ -64,12 +64,12 @@ export default function AboutMeSection() {
               </motion.div>
             </div>
 
-            {/* CTA Buttons */}
+            {/* CTA Buttons with Social Links */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4"
+              className="flex flex-wrap items-center gap-3 sm:gap-4"
             >
               <Button
                 className="bg-[#FD853A] hover:bg-[#fc7422] text-white px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base font-medium rounded"
@@ -80,26 +80,8 @@ export default function AboutMeSection() {
                   Got a project?
                 </a>
               </Button>
-              {/* My resume button - Hidden */}
-              {/* <Button
-                variant="outline"
-                className="border-2 border-[#fc7422] hover:border-[#FD853A] hover:text-[#FD853A] text-[#171717] px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base font-medium rounded bg-transparent"
-                size="lg"
-                asChild
-              >
-                <a href="/resume.pdf" download>
-                  My resume
-                </a>
-              </Button> */}
-            </motion.div>
 
-            {/* Social Links */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
-              className="flex gap-3 sm:gap-4"
-            >
+              {/* Social Links */}
               {about.social.map((social, index) => {
                 const Icon = socialIcons[social.icon] || Globe;
                 return (
