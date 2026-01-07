@@ -34,7 +34,7 @@ export default function AboutMeSection() {
                 transition={{ delay: 0.2 }}
                 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#171717] mb-6 md:mb-8 lg:mb-12"
               >
-                Hello<span className="text-[#FD853A]">.</span>
+                Hello<span className="text-[#FD853A]">,</span>
               </motion.h2>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -80,7 +80,8 @@ export default function AboutMeSection() {
                   Got a project?
                 </a>
               </Button>
-              <Button
+              {/* My resume button - Hidden */}
+              {/* <Button
                 variant="outline"
                 className="border-2 border-[#fc7422] hover:border-[#FD853A] hover:text-[#FD853A] text-[#171717] px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base font-medium rounded bg-transparent"
                 size="lg"
@@ -89,7 +90,7 @@ export default function AboutMeSection() {
                 <a href="/resume.pdf" download>
                   My resume
                 </a>
-              </Button>
+              </Button> */}
             </motion.div>
 
             {/* Social Links */}

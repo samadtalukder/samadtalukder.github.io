@@ -15,10 +15,8 @@ export default function ProjectsSection() {
         {/* Complete Apps Section */}
         <div className="mb-16 max-w-6xl mx-auto">
           <ScrollReveal delay={0.2}>
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Complete Apps</h3>
-            <p className="text-gray-600 mb-8">
-              Production-ready applications available on app stores
-            </p>
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">Available on app stores</h3>
+          
           </ScrollReveal>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -38,10 +36,7 @@ export default function ProjectsSection() {
         {/* Small Projects Section */}
         <div className="max-w-6xl mx-auto">
           <ScrollReveal delay={0.4}>
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Small Projects</h3>
-            <p className="text-gray-600 mb-8">
-              Personal projects and experiments available on GitHub
-            </p>
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">Available on GitHub</h3>
           </ScrollReveal>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

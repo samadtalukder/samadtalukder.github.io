@@ -214,7 +214,7 @@
       "completeApps": [
          {
             "name": "HLB Connect Singapore",
-            "image": "img/portfolio/hlbank.png",
+            "image": "img/portfolio/hlbank-1.png",
             "url": "https://play.google.com/store/apps/details?id=sg.com.hongleongconnect.mobile",
             "description": "Banking app for Hong Leong Bank Singapore",
             "category": "Android"
@@ -228,14 +228,14 @@
          },
          {
             "name": "Game On App",
-            "image": "img/portfolio/game_on.jpg",
+            "image": "img/portfolio/game_on.png",
             "url": "https://play.google.com/store/apps/details?id=net.livemedia.gameon",
             "description": "Gaming news and live streaming platform",
             "category": "Android"
          },
          {
             "name": "Cinematic App",
-            "image": "img/portfolio/Cinematic.jpg",
+            "image": "img/portfolio/cinematic-1.png",
             "url": "https://play.google.com/store/apps/details?id=net.live.ent.cinematic",
             "description": "Movie streaming and entertainment app",
             "category": "Android"
