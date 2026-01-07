@@ -108,15 +108,14 @@ export default function AboutMeSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex justify-center lg:justify-end relative mt-8 lg:mt-0"
           >
-            {/* Decorative angle brackets */}
-            <div className="absolute left-0 top-1/2 -translate-y-1/2 text-[#FD853A] text-4xl md:text-5xl lg:text-6xl font-light opacity-40 ">
-              {'<'}
-            </div>
-            <div className="absolute right-0 top-1/2 -translate-y-1/2 text-[#FD853A] text-4xl md:text-5xl lg:text-6xl font-light opacity-40 ">
-              {'>'}
-            </div>
-
             <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
+              {/* Decorative angle brackets */}
+              <div className="absolute -left-8 sm:-left-10 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 text-[#FD853A] text-4xl md:text-5xl lg:text-6xl font-light opacity-40">
+                {'{'}
+              </div>
+              <div className="absolute -right-8 sm:-right-10 md:-right-12 lg:-right-16 top-1/2 -translate-y-1/2 text-[#FD853A] text-4xl md:text-5xl lg:text-6xl font-light opacity-40">
+                {'}'}
+              </div>
               {/* Coral background behind */}
               <div className="absolute inset-0 rounded-lg -z-10 scale-90"></div>
               {/* Photo with original aspect ratio */}
