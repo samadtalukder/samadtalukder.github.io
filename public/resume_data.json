@@ -120,6 +120,7 @@
       {
          "position": "Software Developer (Android)",
          "company": "Hong Leong Bank",
+         "location": "Malaysia",
          "startDate": "Feb 2022",
          "endDate": "Present",
          "responsibility": [
@@ -133,6 +134,7 @@
       {
          "position": "Android Developer",
          "company": "Rokomari",
+         "location": "Bangladesh",
          "description": "Developed in-house and production applications using Flutter and Java. Collaborated on sprint planning, implemented new features, fixed bugs, and maintained an internal delivery system app. Worked with the UI/UX designer, product manager, and business team.",
          "startDate": "Aug 2021",
          "endDate": "Jan 2022",
@@ -147,6 +149,7 @@
       {
          "position": "Android Developer",
          "company": "Live Technologies Ltd",
+         "location": "Bangladesh",
          "description": "Developed various applications for different clients using Java, Kotlin, and Flutter. Worked closely with designers, engineers, and product managers to deliver great user experiences. Integrated ExoPlayer for live streaming, implemented new features, and fixed bugs.",
          "startDate": "Oct 2017",
          "endDate": "Jul 2021",
@@ -162,13 +165,15 @@
    "education": [
       {
          "degree": "BSc in Computer Science and Engineering",
-         "institution": "Eastern University (BD)",
+         "institution": "Eastern University",
+         "location": "Bangladesh",
          "startYear": 2017,
          "endYear": 2020
       },
       {
          "degree": "Diploma in Engineering",
          "institution": "Feni Computer Institute",
+         "location": "Bangladesh",
          "startYear": 2012,
          "endYear": 2016
       }

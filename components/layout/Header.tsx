@@ -7,8 +7,8 @@ import { about } from '@/lib/data';
 const navItems = [
   { name: 'About', href: '#about' },
   // { name: 'Skills', href: '#skills' },
-  { name: 'Experience', href: '#experience' },
-  { name: 'Education', href: '#education' },
+  { name: 'Resume', href: '#resume' },
+  // { name: 'Education', href: '#education' },
   { name: 'Projects', href: '#projects' },
   { name: 'Blog', href: '#blog' },
   { name: 'Contact', href: '#contact' },

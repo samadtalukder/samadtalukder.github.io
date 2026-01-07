@@ -24,6 +24,7 @@ export interface Skill {
 export interface Experience {
   position: string;
   company: string;
+  location: string;
   startDate: string;
   endDate: string;
   responsibility: string[];
@@ -33,6 +34,7 @@ export interface Experience {
 export interface Education {
   degree: string;
   institution: string;
+  location: string;
   startYear: number;
   endYear: number;
 }
