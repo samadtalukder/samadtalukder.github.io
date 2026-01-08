@@ -1,9 +1,9 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import AboutMeSection from '@/components/sections/AboutMeSection';
+import HomeSection from '@/components/sections/HomeSection';
 import HireMeSection from '@/components/sections/HireMeSection';
 import ServicesSection from '@/components/sections/ServicesSection';
-import TimelineSection from '@/components/sections/TimelineSection';
+import ResumeSection from '@/components/sections/ResumeSection';
 import ProjectsSection from '@/components/sections/ProjectsSection';
 import BlogSection from '@/components/sections/BlogSection';
 import RecommendationsSection from '@/components/sections/RecommendationsSection';
@@ -14,10 +14,10 @@ export default function Home() {
     <>
       <Header />
       <main className="min-h-screen">
-        <AboutMeSection />
+        <HomeSection />
         <ServicesSection />
         {/* <HireMeSection /> */}
-        <TimelineSection />
+        <ResumeSection />
         <ProjectsSection />
         <BlogSection />
         <RecommendationsSection />

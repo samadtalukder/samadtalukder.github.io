@@ -4,9 +4,9 @@ import { experience, education } from '@/lib/data';
 import ScrollReveal from '@/components/animations/ScrollReveal';
 import TimelineItem from '@/components/shared/TimelineItem';
 
-export default function TimelineSection() {
+export default function ResumeSection() {
   return (
-    <section id="resume" className="py-20 bg-white">
+    <section id="resume" className="py-20" style={{ background: 'radial-gradient(ellipse at center, #FAFAFA 100%, #E9E3DE 0%)' }}>
       <div className="container mx-auto px-4">
         <ScrollReveal>
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">

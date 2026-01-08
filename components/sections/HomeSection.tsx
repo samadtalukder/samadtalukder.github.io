@@ -14,7 +14,7 @@ const socialIcons: Record<string, any> = {
   'fa-facebook': Facebook,
 };
 
-export default function AboutMeSection() {
+export default function HomeSection() {
   return (
     <section id="about" className="min-h-screen flex items-center py-12 md:py-16 lg:py-20 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
