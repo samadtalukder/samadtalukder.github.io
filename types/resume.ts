@@ -61,6 +61,12 @@ export interface Projects {
   smallProjects: ProjectItem[];
 }
 
+export interface Service {
+  title: string;
+  description: string;
+  icon: string;
+}
+
 export interface Contact {
   email: string;
   message: string;
@@ -79,7 +85,7 @@ export interface BlogPost {
 
 export interface ResumeData {
   about: About;
-  hireMe: string[];
+  services: Service[];
   skills: Skill[];
   experience: Experience[];
   education: Education[];
