@@ -27,8 +27,8 @@ export default function ServicesSection() {
     <section id="services" className="py-20">
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <p className="text-center text-gray-600 text-lg mb-2">My Services</p>
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Diverse services to meet needs</h2>
+          <p className="text-center text-[#FD853A] font-medium text-lg mb-2">My Services</p>
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">I Would Be A Good Partner With You​</h2>
         </ScrollReveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">

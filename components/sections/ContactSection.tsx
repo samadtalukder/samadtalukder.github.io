@@ -9,19 +9,12 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
+
         <ScrollReveal>
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Contact</h2>
+          <p className="text-center text-[#FD853A] font-medium text-lg mb-2">Contact</p>
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Let’s Talk About Ideas​</h2>
         </ScrollReveal>
-
-        {/* Message Section */}
-        <ScrollReveal delay={0.2}>
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <p className="text-gray-700 text-lg leading-relaxed">
-              I'm interested in freelance opportunities. However, if you have other request or question, don't hesitate to contact me
-            </p>
-          </div>
-        </ScrollReveal>
-
+       
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
           {/* Map Section */}
           <ScrollReveal delay={0.3}>

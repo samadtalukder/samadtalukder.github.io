@@ -20,8 +20,8 @@ export default function RecommendationsSection() {
     <section id="recommendations" className="py-20">
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <p className="text-center text-gray-600 text-lg mb-2">Testimonial of few folks</p>
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Word on the street about me</h2>
+          <p className="text-center font-medium text-[#FD853A] text-lg mb-2">Endorsements</p>
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Word on the street about me</h2>
         </ScrollReveal>
 
         <div className="max-w-7xl mx-auto relative group">

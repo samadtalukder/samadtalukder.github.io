@@ -5,7 +5,8 @@ import { Menu, X } from 'lucide-react';
 import { about } from '@/lib/data';
 
 const navItems = [
-  { name: 'About', href: '#about' },
+  { name: 'Home', href: '#about' },
+  { name: 'About Me', href: '#about-me' },
   { name: 'Services', href: '#services' },
   // { name: 'Skills', href: '#skills' },
   { name: 'Resume', href: '#resume' },
@@ -61,7 +62,7 @@ export default function Header() {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`font-medium transition-colors ${
+                  className={`font-bold transition-colors ${
                     isScrolled
                       ? 'text-[#171717] hover:text-[#FD853A]'
                       : 'text-[#171717] hover:text-[#FD853A]'
@@ -92,7 +93,7 @@ export default function Header() {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-2xl font-medium text-[#171717] hover:text-[#FD853A] transition-colors"
+                className="text-2xl font-bold text-[#171717] hover:text-[#FD853A] transition-colors"
               >
                 {item.name}
               </button>

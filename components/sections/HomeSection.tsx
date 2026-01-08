@@ -3,7 +3,10 @@
 import { about } from '@/lib/data';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Facebook, BookOpen, Globe, Download, Briefcase } from 'lucide-react';
+import { Github, Linkedin, Facebook, BookOpen, Globe } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAndroid, faApple, faReact, faGithub, faFlutter, faAppStoreIos } from '@fortawesome/free-brands-svg-icons';
+import { faCode, faLayerGroup, faCube } from '@fortawesome/free-solid-svg-icons';
 import { Button } from '@/components/ui/button';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -14,6 +17,16 @@ const socialIcons: Record<string, any> = {
   'fa-facebook': Facebook,
 };
 
+const skills = [
+  { name: 'Android', icon: faAndroid },
+  { name: 'Flutter', icon: faFlutter },
+  { name: 'iOS', icon: faAppStoreIos },
+  { name: 'React Native', icon: faReact },
+  { name: 'KMP', icon: faCube },
+  { name: 'Jetpack Compose', icon: faLayerGroup },
+  { name: 'Github', icon: faGithub },
+];
+
 export default function HomeSection() {
   return (
     <section id="about" className="min-h-screen flex items-center py-12 md:py-16 lg:py-20 bg-white relative overflow-hidden">
@@ -21,25 +34,37 @@ export default function HomeSection() {
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center max-w-7xl mx-auto pb-16 sm:pb-20 md:pb-24">
           {/* Left side - Content */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 1.2,
+              ease: [0.22, 1, 0.36, 1],
+              delay: 0.1
+            }}
             className="space-y-6 md:space-y-8 lg:space-y-12"
           >
             {/* Name and Title */}
             <div>
               <motion.h2
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.2 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 1,
+                  ease: [0.22, 1, 0.36, 1],
+                  delay: 0.3
+                }}
                 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#171717] mb-6 md:mb-8 lg:mb-12"
               >
                 Hello<span className="text-[#FD853A]">,</span>
               </motion.h2>
               <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.3 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 1,
+                  ease: [0.22, 1, 0.36, 1],
+                  delay: 0.5
+                }}
                 className="border-l-4 border-[#FD853A] pl-4 mb-8 md:mb-10 lg:mb-14"
               >
                 <p className="text-lg sm:text-xl text-[#171717] mb-2">I'm {about.name}</p>
@@ -66,9 +91,13 @@ export default function HomeSection() {
 
             {/* CTA Buttons with Social Links */}
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 1,
+                ease: [0.22, 1, 0.36, 1],
+                delay: 0.7
+              }}
               className="flex flex-wrap items-center gap-3 sm:gap-4"
             >
               <Button
@@ -77,7 +106,7 @@ export default function HomeSection() {
                 asChild
               >
                 <a href="#contact">
-                  Got a project?
+                  Let's Talk
                 </a>
               </Button>
 
@@ -103,19 +132,41 @@ export default function HomeSection() {
 
           {/* Right side - Photo */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            initial={{ opacity: 0, scale: 0.95, y: 30 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{
+              duration: 1.2,
+              ease: [0.22, 1, 0.36, 1],
+              delay: 0.3
+            }}
             className="flex justify-center lg:justify-end relative mt-8 lg:mt-0"
           >
             <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
               {/* Decorative angle brackets */}
-              <div className="absolute -left-8 sm:-left-10 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 text-[#FD853A] text-4xl md:text-5xl lg:text-6xl font-light opacity-40">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 0.4, x: 0 }}
+                transition={{
+                  duration: 1,
+                  ease: [0.22, 1, 0.36, 1],
+                  delay: 0.6
+                }}
+                className="absolute -left-8 sm:-left-10 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 text-[#FD853A] text-4xl md:text-5xl lg:text-6xl font-light"
+              >
                 {'{'}
-              </div>
-              <div className="absolute -right-8 sm:-right-10 md:-right-12 lg:-right-16 top-1/2 -translate-y-1/2 text-[#FD853A] text-4xl md:text-5xl lg:text-6xl font-light opacity-40">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 0.4, x: 0 }}
+                transition={{
+                  duration: 1,
+                  ease: [0.22, 1, 0.36, 1],
+                  delay: 0.6
+                }}
+                className="absolute -right-8 sm:-right-10 md:-right-12 lg:-right-16 top-1/2 -translate-y-1/2 text-[#FD853A] text-4xl md:text-5xl lg:text-6xl font-light"
+              >
                 {'}'}
-              </div>
+              </motion.div>
               {/* Coral background behind */}
               <div className="absolute inset-0 rounded-lg -z-10 scale-90"></div>
               {/* Photo with original aspect ratio */}
@@ -135,24 +186,39 @@ export default function HomeSection() {
 
       {/* Skills List - full width background strip at bottom */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.7 }}
-        className="absolute bottom-0 left-0 right-0 py-3 sm:py-4 z-20"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 1,
+          ease: [0.22, 1, 0.36, 1],
+          delay: 0.9
+        }}
+        className="absolute bottom-0 left-0 right-0 py-6 sm:py-8 md:py-10 lg:py-12 z-20"
         style={{
           background: 'radial-gradient(ellipse at center, #FAFAFA 100%, #E9E3DE 0%)'
         }}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap gap-x-3 sm:gap-x-4 gap-y-2 justify-center lg:justify-between max-w-5xl mx-auto">
-            {['Android', 'Flutter', 'iOS', 'React Native', 'KMP', 'Jetpack Compose', 'Github'].map((skill) => (
-              <span
-                key={skill}
-                className="text-gray-400 text-xs sm:text-sm md:text-base font-normal px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-transparent hover:border-[#FD853A] hover:text-[#171717] transition-all duration-300 cursor-pointer"
-              >
-                {skill}
-              </span>
-            ))}
+          <div className="flex flex-wrap gap-x-6 sm:gap-x-8 md:gap-x-10 lg:gap-x-12 gap-y-6 sm:gap-y-8 justify-center lg:justify-between max-w-7xl mx-auto">
+            {skills.map((skill, index) => (
+                <motion.div
+                  key={skill.name}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.6,
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: 1 + index * 0.08
+                  }}
+                  className="group flex items-center justify-center cursor-pointer"
+                  title={skill.name}
+                >
+                  <FontAwesomeIcon
+                    icon={skill.icon}
+                    className="text-[24px] sm:text-[24px] md:text-[24px] lg:text-[28px] xl:text-[32px] text-black transition-all duration-300 group-hover:scale-110 group-hover:text-[#FD853A]"
+                  />
+                </motion.div>
+              ))}
           </div>
         </div>
       </motion.div>

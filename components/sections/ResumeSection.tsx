@@ -9,9 +9,8 @@ export default function ResumeSection() {
     <section id="resume" className="py-20" style={{ background: 'radial-gradient(ellipse at center, #FAFAFA 100%, #E9E3DE 0%)' }}>
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">
-            Resume
-          </h2>
+          <p className="text-center text-[#FD853A] font-medium text-lg mb-2">Education & Experience</p>
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Empowering Creativity through​</h2>
         </ScrollReveal>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">

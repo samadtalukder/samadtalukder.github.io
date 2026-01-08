@@ -2,7 +2,7 @@
    "about": {
       "name": "Samad Talukder",
       "title": "Android Developer",
-      "bio": "Hello, I'm Samad Talukder! \nI build mobile experiences that people actually want to use. From native to cross-platform solutions, I develop scalable mobile applications from scratch and transform them into modern user-friendly experiences. Whether it's Android, iOS, or hybrid apps, I can take your concept from idea to launch. I always strive to learn about the newest technologies and frameworks in the mobile ecosystem.",
+      "bio": "I'm a Mobile App Developer with 8+ years of experience specializing in Android development using Kotlin and Jetpack Compose. I build high-quality mobile applications across Android, Flutter, iOS, and React Native, turning complex ideas into reliable, user-friendly products.\n\nCurrently working as a freelance developer, I focus on clean architecture, performance, and thoughtful UI/UX. My experience spans fintech, government platforms, POS systems, and social apps, where I've tackled challenges like secure payments, video streaming, offline support, and scalability.\n\nI'm passionate about exploring AI integration in mobile apps and building maintainable systems that are easy for teams to understand and extend.",
       "email": "samadtalukdar6@gmail.com",
       "mobile": "+88 01792066848",
       "image": "img/me.png",
@@ -30,10 +30,6 @@
          }
       ]
    },
-   "hireMe": [
-      "To Develop Apps",
-      "A Trainer"
-   ],
    "skills": [
       {
          "name": "Android",
@@ -143,7 +139,7 @@
    ],
    "education": [
       {
-         "degree": "BSc in Computer Science and Engineering",
+         "degree": "Bachelor of Computer Science and Engineering",
          "institution": "Eastern University",
          "location": "Bangladesh",
          "startYear": 2017,
