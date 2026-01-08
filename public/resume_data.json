@@ -122,14 +122,7 @@
          "company": "Hong Leong Bank",
          "location": "Malaysia",
          "startDate": "Feb 2022",
-         "endDate": "Present",
-         "responsibility": [
-            "Analyze, develop and maintain features and stability of banking solution for Android, using Kotlin.",
-            "Sprint planning with team members regarding projects and deadlines.",
-            "Supervise and interact with developers and QA in the team regarding project development and workflow.",
-            "Followed Git flow and maintained CI using Jenkins and GitLab CI.",
-            "Integrated FCM push notification service for multiple build variants."
-         ]
+         "endDate": "Present"
       },
       {
          "position": "Android Developer",
@@ -137,14 +130,7 @@
          "location": "Bangladesh",
          "description": "Developed in-house and production applications using Flutter and Java. Collaborated on sprint planning, implemented new features, fixed bugs, and maintained an internal delivery system app. Worked with the UI/UX designer, product manager, and business team.",
          "startDate": "Aug 2021",
-         "endDate": "Jan 2022",
-         "responsibility": [
-            "Developed their in-house and production applications, using Flutter and Java.",
-            "Sprint planning with team members regarding upcoming projects and deadlines.",
-            "Implement new features and existing bug fixed.",
-            "Maintained the Android app for their internal delivery system.",
-            "Communicated with the UI/UX designer, product manager, business team."
-         ]
+         "endDate": "Jan 2022"
       },
       {
          "position": "Android Developer",
@@ -152,14 +138,7 @@
          "location": "Bangladesh",
          "description": "Developed various applications for different clients using Java, Kotlin, and Flutter. Worked closely with designers, engineers, and product managers to deliver great user experiences. Integrated ExoPlayer for live streaming, implemented new features, and fixed bugs.",
          "startDate": "Oct 2017",
-         "endDate": "Jul 2021",
-         "responsibility": [
-            "Developed various applications for different clients, using Java, Kotlin and Flutter.",
-            "Collaborated with designers, engineers, and product managers to build great experiences.",
-            "Communicated with the backend by using the REST API.",
-            "Integrated ExoPlayer to watch live streaming through the app.",
-            "Implement new features and existing bug fixed."
-         ]
+         "endDate": "Jul 2021"
       }
    ],
    "education": [
@@ -225,6 +204,13 @@
             "category": "Android"
          },
          {
+            "name": "Rokomari App",
+            "image": "img/portfolio/rokomari.png",
+            "url": "https://play.google.com/store/apps/details?id=com.rokomari",
+            "description": "E-commerce platform for books in Bangladesh",
+            "category": "Flutter"
+         },
+         {
             "name": "My Sports App",
             "image": "img/portfolio/mysports.jpg",
             "url": "https://play.google.com/store/apps/details?id=net.livetechnologies.mysports",
@@ -244,13 +230,6 @@
             "url": "https://play.google.com/store/apps/details?id=net.live.ent.cinematic",
             "description": "Movie streaming and entertainment app",
             "category": "Android"
-         },
-         {
-            "name": "Rokomari App",
-            "image": "img/portfolio/rokomari.png",
-            "url": "https://play.google.com/store/apps/details?id=com.rokomari",
-            "description": "E-commerce platform for books in Bangladesh",
-            "category": "Flutter"
          }
       ],
       "smallProjects": [

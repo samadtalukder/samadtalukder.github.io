@@ -2,7 +2,6 @@
 
 import { Card } from '@/components/ui/card';
 import { motion } from 'framer-motion';
-import { Calendar } from 'lucide-react';
 
 interface TimelineItemProps {
   title: string;
@@ -23,13 +22,13 @@ export default function TimelineItem({ title, subtitle, period, description, ind
       return 'top-0 bottom-1/2';
     } else if (isFirst) {
       // First item - line from top to beyond bottom
-      return 'top-0 -bottom-8';
+      return 'top-0 -bottom-4';
     } else if (isLast) {
       // Last item - line from beyond top to center
-      return '-top-8 bottom-1/2';
+      return '-top-4 bottom-1/2';
     } else {
       // Middle items - line extends beyond both top and bottom
-      return '-top-8 -bottom-8';
+      return '-top-4 -bottom-4';
     }
   };
 
@@ -39,7 +38,7 @@ export default function TimelineItem({ title, subtitle, period, description, ind
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="relative flex gap-4 pb-8 group/timeline"
+      className="relative flex gap-4 pb-4 group/timeline"
     >
       {/* Timeline Line and Dot Container */}
       <div className="relative w-4 flex-shrink-0 self-stretch">
@@ -60,20 +59,6 @@ export default function TimelineItem({ title, subtitle, period, description, ind
           <span className="text-sm text-[#FD853A] font-semibold block transition-all duration-500 ease-out group-hover:text-white group-hover:scale-105">{period}</span>
           <h3 className="text-2xl font-extrabold text-gray-800 leading-tight transition-all duration-500 ease-out group-hover:text-white group-hover:tracking-wide">{title}</h3>
           <p className="text-[#FD853A] font-medium transition-all duration-500 ease-out group-hover:text-white group-hover:opacity-90">{subtitle}</p>
-{/*
-          {description && (
-            <div className="text-gray-600 space-y-2 mt-3">
-              {Array.isArray(description) ? (
-                <ul className="list-disc list-inside space-y-1">
-                  {description.map((item, idx) => (
-                    <li key={idx} className="text-sm">{item}</li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-sm">{description}</p>
-              )}
-            </div>
-          )} */}
         </Card>
       </div>
     </motion.div>
