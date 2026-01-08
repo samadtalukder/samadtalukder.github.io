@@ -18,7 +18,7 @@ export default function AboutMeSection() {
             className="text-center mb-12 md:mb-16 lg:mb-20"
           >
 
-            <p className="text-center font-medium text-[#FD853A] text-lg mb-2">About Me</p>
+            <p className="text-center font-medium text-brand-orange text-lg mb-2">About Me</p>
             <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Who Am I</h2>
 
           </motion.div>
@@ -35,7 +35,7 @@ export default function AboutMeSection() {
               <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px]">
                 {/* Blob Shape Container with Gradient Background */}
                 <div
-                  className="absolute inset-0 bg-gradient-to-br from-orange-400 via-[#FD853A] to-orange-600"
+                  className="absolute inset-0 bg-gradient-to-br from-orange-400 via-brand-orange to-orange-600"
                   style={{
                     borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%'
                   }}
@@ -65,8 +65,8 @@ export default function AboutMeSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="space-y-6"
             >
-              <h3 className="text-2xl sm:text-3xl font-bold text-[#171717]">
-                I'm <span className="text-[#FD853A]">{about.name}</span>
+              <h3 className="text-2xl sm:text-3xl font-bold text-brand-dark">
+                I'm <span className="text-brand-orange">{about.name}</span>
               </h3>
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed whitespace-pre-line">
                 {about.bio}

@@ -3,19 +3,12 @@
 import { about } from '@/lib/data';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Facebook, BookOpen, Globe } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAndroid, faApple, faReact, faGithub, faFlutter, faAppStoreIos } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faLayerGroup, faCube } from '@fortawesome/free-solid-svg-icons';
+import { faAndroid, faReact, faGithub, faFlutter, faAppStoreIos } from '@fortawesome/free-brands-svg-icons';
+import { faLayerGroup, faCube } from '@fortawesome/free-solid-svg-icons';
 import { Button } from '@/components/ui/button';
 import { TypeAnimation } from 'react-type-animation';
-
-const socialIcons: Record<string, any> = {
-  'fa-linkedin': Linkedin,
-  'fa-github': Github,
-  'fa-medium': BookOpen,
-  'fa-facebook': Facebook,
-};
+import { getSocialIcon } from '@/lib/icons';
 
 const skills = [
   { name: 'Android', icon: faAndroid },
@@ -53,9 +46,9 @@ export default function HomeSection() {
                   ease: [0.22, 1, 0.36, 1],
                   delay: 0.3
                 }}
-                className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#171717] mb-6 md:mb-8 lg:mb-12"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-dark mb-6 md:mb-8 lg:mb-12"
               >
-                Hello<span className="text-[#FD853A]">,</span>
+                Hello<span className="text-brand-orange">,</span>
               </motion.h2>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -65,10 +58,10 @@ export default function HomeSection() {
                   ease: [0.22, 1, 0.36, 1],
                   delay: 0.5
                 }}
-                className="border-l-4 border-[#FD853A] pl-4 mb-8 md:mb-10 lg:mb-14"
+                className="border-l-4 border-brand-orange pl-4 mb-8 md:mb-10 lg:mb-14"
               >
-                <p className="text-lg sm:text-xl text-[#171717] mb-2">I'm {about.name}</p>
-                <div className="text-2xl sm:text-3xl md:text-4xl text-[#FD853A] font-bold h-12 sm:h-14">
+                <p className="text-lg sm:text-xl text-brand-dark mb-2">I'm {about.name}</p>
+                <div className="text-2xl sm:text-3xl md:text-4xl text-brand-orange font-bold h-12 sm:h-14">
                   <TypeAnimation
                     sequence={[
                       'Android Developer',
@@ -101,7 +94,7 @@ export default function HomeSection() {
               className="flex flex-wrap items-center gap-3 sm:gap-4"
             >
               <Button
-                className="bg-[#FD853A] hover:bg-[#fc7422] text-white px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base font-medium rounded-full"
+                className="bg-brand-orange hover:bg-brand-orange/90 text-white px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base font-medium rounded-full"
                 size="lg"
                 asChild
               >
@@ -112,14 +105,14 @@ export default function HomeSection() {
 
               {/* Social Links */}
               {about.social.map((social, index) => {
-                const Icon = socialIcons[social.icon] || Globe;
+                const Icon = getSocialIcon(social.icon);
                 return (
                   <a
                     key={index}
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full border-2 border-gray-700 hover:border-[#FD853A] hover:bg-gray-800 flex items-center justify-center transition-all hover:scale-110 text-gray-400 hover:text-[#FD853A]"
+                    className="w-10 h-10 rounded-full border-2 border-gray-700 hover:border-brand-orange hover:bg-gray-800 flex items-center justify-center transition-all hover:scale-110 text-gray-400 hover:text-brand-orange"
                   >
                     <Icon className="w-4 h-4" />
                   </a>
@@ -151,7 +144,7 @@ export default function HomeSection() {
                   ease: [0.22, 1, 0.36, 1],
                   delay: 0.6
                 }}
-                className="absolute -left-8 sm:-left-10 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 text-[#FD853A] text-4xl md:text-5xl lg:text-6xl font-light"
+                className="absolute -left-8 sm:-left-10 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 text-brand-orange text-4xl md:text-5xl lg:text-6xl font-light"
               >
                 {'{'}
               </motion.div>
@@ -163,7 +156,7 @@ export default function HomeSection() {
                   ease: [0.22, 1, 0.36, 1],
                   delay: 0.6
                 }}
-                className="absolute -right-8 sm:-right-10 md:-right-12 lg:-right-16 top-1/2 -translate-y-1/2 text-[#FD853A] text-4xl md:text-5xl lg:text-6xl font-light"
+                className="absolute -right-8 sm:-right-10 md:-right-12 lg:-right-16 top-1/2 -translate-y-1/2 text-brand-orange text-4xl md:text-5xl lg:text-6xl font-light"
               >
                 {'}'}
               </motion.div>
@@ -215,7 +208,7 @@ export default function HomeSection() {
                 >
                   <FontAwesomeIcon
                     icon={skill.icon}
-                    className="text-[24px] sm:text-[24px] md:text-[24px] lg:text-[28px] xl:text-[32px] text-black transition-all duration-300 group-hover:scale-110 group-hover:text-[#FD853A]"
+                    className="text-[24px] sm:text-[24px] md:text-[24px] lg:text-[28px] xl:text-[32px] text-black transition-all duration-300 group-hover:scale-110 group-hover:text-brand-orange"
                   />
                 </motion.div>
               ))}

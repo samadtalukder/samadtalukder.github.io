@@ -7,10 +7,10 @@ import Image from 'next/image';
 
 export default function BlogSection() {
   return (
-    <section id="blog" className="py-20 bg-gray-50">
+    <section id="blog" className="py-16 md:py-20 lg:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <p className="text-center text-[#FD853A] font-medium text-lg mb-2">Latest Blog</p>
+          <p className="text-center text-brand-orange font-medium text-lg mb-2">Latest Blog</p>
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">My Articles and Advice​</h2>
         </ScrollReveal>
 
@@ -32,7 +32,7 @@ export default function BlogSection() {
                         style={{ borderTopLeftRadius: '100%' }}></div>
                     </div>
                     <div className="absolute bottom-4 right-4 z-10">
-                      <div className="w-16 h-16 bg-[#FD853A] rounded-full flex items-center justify-center group-hover:bg-[#1e293b] transition-colors duration-300 shadow-lg">
+                      <div className="w-16 h-16 bg-brand-orange rounded-full flex items-center justify-center group-hover:bg-[#1e293b] transition-colors duration-300 shadow-lg">
                         <ArrowUpRight className="w-7 h-7 text-white" />
                       </div>
                     </div>
@@ -48,11 +48,11 @@ export default function BlogSection() {
                   )}
                   <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
                     <div className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#FD853A] rounded-full"></span>
+                      <span className="w-2 h-2 bg-brand-orange rounded-full"></span>
                       <span className="font-medium">{about.name}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#FD853A] rounded-full"></span>
+                      <span className="w-2 h-2 bg-brand-orange rounded-full"></span>
                       <span>{post.date}</span>
                     </div>
                   </div>

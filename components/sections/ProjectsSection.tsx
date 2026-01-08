@@ -6,10 +6,10 @@ import PortfolioCard from '@/components/shared/PortfolioCard';
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-16 md:py-20 lg:py-24 bg-white">
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <p className="text-center text-[#FD853A] font-medium text-lg mb-2">Latest Portfolio</p>
+          <p className="text-center text-brand-orange font-medium text-lg mb-2">Latest Portfolio</p>
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Transforming Ideas into Exceptional​</h2>
         </ScrollReveal>
 

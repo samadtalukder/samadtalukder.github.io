@@ -1,14 +1,8 @@
 'use client';
 
 import { about } from '@/lib/data';
-import { Github, Linkedin, Facebook, BookOpen, ArrowUp } from 'lucide-react';
-
-const socialIcons: Record<string, any> = {
-  'fa-linkedin': Linkedin,
-  'fa-github': Github,
-  'fa-medium': BookOpen,
-  'fa-facebook': Facebook,
-};
+import { ArrowUp } from 'lucide-react';
+import { getSocialIcon } from '@/lib/icons';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -22,8 +16,8 @@ export default function Footer() {
           {/* Social Links */}
           <div className="flex gap-4">
             {about.social.map((social, index) => {
-              const Icon = socialIcons[social.icon];
-              return Icon ? (
+              const Icon = getSocialIcon(social.icon);
+              return (
                 <a
                   key={index}
                   href={social.url}
@@ -33,14 +27,14 @@ export default function Footer() {
                 >
                   <Icon className="w-5 h-5" />
                 </a>
-              ) : null;
+              );
             })}
           </div>
 
           {/* Back to Top Button */}
           <button
             onClick={scrollToTop}
-            className="w-12 h-12 rounded-full bg-[#FD853A] hover:bg-[#fc7422] flex items-center justify-center transition-all hover:scale-110 shadow-lg"
+            className="w-12 h-12 rounded-full bg-brand-orange hover:bg-brand-orange/90 flex items-center justify-center transition-all hover:scale-110 shadow-lg"
           >
             <ArrowUp className="w-5 h-5" />
           </button>

@@ -7,11 +7,11 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-16 md:py-20 lg:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
 
         <ScrollReveal>
-          <p className="text-center text-[#FD853A] font-medium text-lg mb-2">Contact</p>
+          <p className="text-center text-brand-orange font-medium text-lg mb-2">Contact</p>
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Let’s Talk About Ideas​</h2>
         </ScrollReveal>
        
@@ -31,7 +31,7 @@ export default function ContactSection() {
                   className="absolute inset-0"
                 ></iframe>
                 <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-lg shadow-lg flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-[#FD853A]" />
+                  <MapPin className="w-5 h-5 text-brand-orange" />
                   <span className="font-medium text-gray-800">Dhaka, Bangladesh</span>
                 </div>
               </div>
@@ -46,7 +46,7 @@ export default function ContactSection() {
 
                 {/* Mobile Number */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#FD853A] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-brand-orange rounded-full flex items-center justify-center flex-shrink-0">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div className="text-left">
@@ -57,14 +57,14 @@ export default function ContactSection() {
 
                 {/* Email */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#FD853A] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-brand-orange rounded-full flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div className="text-left">
                     <h4 className="text-sm font-semibold text-gray-600 mb-1">Email</h4>
                     <a
                       href={`mailto:${about.email}`}
-                      className="text-gray-800 font-medium hover:text-[#FD853A] transition-colors break-all"
+                      className="text-gray-800 font-medium hover:text-brand-orange transition-colors break-all"
                     >
                       {about.email}
                     </a>
@@ -73,7 +73,7 @@ export default function ContactSection() {
 
                 {/* Location */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#FD853A] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-brand-orange rounded-full flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div className="text-left">

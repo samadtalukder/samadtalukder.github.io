@@ -30,6 +30,23 @@
          }
       ]
    },
+   "services": [
+      {
+         "title": "App Development",
+         "description": "Building native and cross-platform mobile applications for Android and iOS with modern technologies like Kotlin, Flutter, and React Native.",
+         "icon": "smartphone"
+      },
+      {
+         "title": "Mentorship",
+         "description": "Guiding aspiring developers through personalized mentorship programs, code reviews, and career development strategies.",
+         "icon": "users"
+      },
+      {
+         "title": "Web Development",
+         "description": "Creating responsive and performant web applications using modern frameworks and best practices for optimal user experience.",
+         "icon": "globe"
+      }
+   ],
    "skills": [
       {
          "name": "Android",

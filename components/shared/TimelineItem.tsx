@@ -55,10 +55,10 @@ export default function TimelineItem({ title, subtitle, period, description, ind
 
       {/* Content Card */}
       <div className="flex-1">
-        <Card className="p-6 shadow-lg hover:shadow-2xl transition-all duration-500 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:bg-[#FD853A] group cursor-pointer">
-          <span className="text-sm text-[#FD853A] font-semibold block transition-all duration-500 ease-out group-hover:text-white group-hover:scale-105">{period}</span>
+        <Card className="p-6 shadow-lg hover:shadow-2xl transition-all duration-500 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:bg-brand-orange group cursor-pointer">
+          <span className="text-sm text-brand-orange font-semibold block transition-all duration-500 ease-out group-hover:text-white group-hover:scale-105">{period}</span>
           <h3 className="text-2xl font-extrabold text-gray-800 leading-tight transition-all duration-500 ease-out group-hover:text-white group-hover:tracking-wide">{title}</h3>
-          <p className="text-[#FD853A] font-medium transition-all duration-500 ease-out group-hover:text-white group-hover:opacity-90">{subtitle}</p>
+          <p className="text-brand-orange font-medium transition-all duration-500 ease-out group-hover:text-white group-hover:opacity-90">{subtitle}</p>
         </Card>
       </div>
     </motion.div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -30,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${urbanist.variable} font-sans antialiased`}>
-        {children}
+        <ErrorBoundary>{children}</ErrorBoundary>
       </body>
     </html>
   );

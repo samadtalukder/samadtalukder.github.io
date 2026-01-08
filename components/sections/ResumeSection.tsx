@@ -6,10 +6,10 @@ import TimelineItem from '@/components/shared/TimelineItem';
 
 export default function ResumeSection() {
   return (
-    <section id="resume" className="py-20" style={{ background: 'radial-gradient(ellipse at center, #FAFAFA 100%, #E9E3DE 0%)' }}>
+    <section id="resume" className="py-16 md:py-20 lg:py-24" style={{ background: 'radial-gradient(ellipse at center, #FAFAFA 100%, #E9E3DE 0%)' }}>
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <p className="text-center text-[#FD853A] font-medium text-lg mb-2">Education & Experience</p>
+          <p className="text-center text-brand-orange font-medium text-lg mb-2">Education & Experience</p>
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Empowering Creativity through​</h2>
         </ScrollReveal>
 

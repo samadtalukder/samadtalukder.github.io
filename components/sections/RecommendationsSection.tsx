@@ -17,10 +17,10 @@ export default function RecommendationsSection() {
   });
 
   return (
-    <section id="recommendations" className="py-20">
+    <section id="recommendations" className="py-16 md:py-20 lg:py-24">
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <p className="text-center font-medium text-[#FD853A] text-lg mb-2">Endorsements</p>
+          <p className="text-center font-medium text-brand-orange text-lg mb-2">Endorsements</p>
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Word on the street about me</h2>
         </ScrollReveal>
 
@@ -28,14 +28,14 @@ export default function RecommendationsSection() {
           {/* Left swipe indicator */}
           <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none hidden lg:flex items-center">
             <div className="ml-2 animate-pulse">
-              <ChevronLeft className="w-8 h-8 text-[#FD853A] opacity-60" />
+              <ChevronLeft className="w-8 h-8 text-brand-orange opacity-60" />
             </div>
           </div>
 
           {/* Right swipe indicator */}
           <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none hidden lg:flex items-center justify-end">
             <div className="mr-2 animate-pulse">
-              <ChevronRight className="w-8 h-8 text-[#FD853A] opacity-60" />
+              <ChevronRight className="w-8 h-8 text-brand-orange opacity-60" />
             </div>
           </div>
 
@@ -44,7 +44,7 @@ export default function RecommendationsSection() {
               {recommendations.map((rec, index) => (
                 <div key={index} className="flex-[0_0_100%] sm:flex-[0_0_calc(50%-0.5rem)] lg:flex-[0_0_calc(33.333%-0.75rem)] min-w-0">
                   <Card className="p-6 shadow-lg h-full flex flex-col">
-                    <Quote className="w-8 h-8 text-[#FD853A] mb-4 opacity-30 flex-shrink-0" />
+                    <Quote className="w-8 h-8 text-brand-orange mb-4 opacity-30 flex-shrink-0" />
 
                     <p className="text-gray-700 text-base leading-relaxed mb-6 italic flex-1 line-clamp-3">
                       "{rec.feedback}"
@@ -55,7 +55,7 @@ export default function RecommendationsSection() {
                         {rec.name.charAt(0)}
                       </div>
                       <div className="flex-1 min-w-0">
-                        <div className="font-bold text-[#FD853A] text-base truncate">{rec.name}</div>
+                        <div className="font-bold text-brand-orange text-base truncate">{rec.name}</div>
                         <div className="text-gray-600 text-sm truncate">{rec.position}</div>
                         <div className="text-gray-600 text-xs truncate">{rec.company}</div>
                       </div>

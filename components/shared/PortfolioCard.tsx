@@ -32,7 +32,7 @@ export default function PortfolioCard({ name, category, image, url, description 
               fill
               className="object-contain group-hover:scale-110 transition-transform duration-700 ease-out"
             />
-            <Badge variant="secondary" className="capitalize text-xs absolute top-4 right-4 z-10" style={{ backgroundColor: '#FD853A', color: '#fff' }}>{category}</Badge>
+            <Badge variant="secondary" className="capitalize text-xs absolute top-4 right-4 z-10 bg-brand-orange text-white">{category}</Badge>
           </div>
           <div className="p-4 flex-1 flex flex-col transition-all duration-500 ease-out">
             <h3 className="text-lg font-bold text-gray-800 line-clamp-1 mb-1 transition-colors duration-300">{name}</h3>
