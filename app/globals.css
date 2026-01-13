@@ -6,7 +6,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-urbanist);
+  --font-sans: var(--font-lato);
   --font-mono: var(--font-geist-mono);
   --color-brand-orange: var(--brand-orange);
   --color-brand-white: var(--brand-white);

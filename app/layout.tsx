@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
+import { Lato } from "next/font/google";
 import "./globals.css";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 
-const urbanist = Urbanist({
+const lato = Lato({
   subsets: ["latin"],
-  variable: "--font-urbanist",
+  weight: ["100", "300", "400", "700", "900"],
+  variable: "--font-lato",
 });
 
 export const metadata: Metadata = {
@@ -30,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${urbanist.variable} font-sans antialiased`}>
+      <body className={`${lato.variable} font-sans antialiased`}>
         <ErrorBoundary>{children}</ErrorBoundary>
       </body>
     </html>
