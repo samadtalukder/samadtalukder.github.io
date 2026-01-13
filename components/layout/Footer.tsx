@@ -34,13 +34,13 @@ export default function Footer() {
           {/* Back to Top Button */}
           <button
             onClick={scrollToTop}
-            className="w-12 h-12 rounded-full bg-brand-orange hover:bg-brand-orange/90 flex items-center justify-center transition-all hover:scale-110 shadow-lg"
+            className="w-12 h-12 rounded-full bg-brand-orange hover:bg-brand-orange-hover flex items-center justify-center transition-all hover:scale-110 shadow-lg"
           >
             <ArrowUp className="w-5 h-5" />
           </button>
 
           {/* Copyright */}
-          <p className="text-gray-400 text-center">
+          <p className="text-gray-300 text-center font-anton">
             &copy; Copyright {new Date().getFullYear()}. Made by Samad Talukder.
           </p>
         </div>

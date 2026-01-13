@@ -6,9 +6,12 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-lato);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-montserrat);
+  --font-heading: var(--font-anton);
+  --font-montserrat: var(--font-montserrat);
+  --font-anton: var(--font-anton);
   --color-brand-orange: var(--brand-orange);
+  --color-brand-orange-hover: var(--brand-orange-hover);
   --color-brand-white: var(--brand-white);
   --color-brand-dark: var(--brand-dark);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -53,7 +56,8 @@
   --radius: 0.625rem;
 
   /* Brand Colors */
-  --brand-orange: #FD853A;
+  --brand-orange: #fe390c;
+  --brand-orange-hover: #ca2d09;
   --brand-white: #FFFFFF;
   --brand-dark: #171717;
 
@@ -130,6 +134,11 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Apply Anton font to all headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-anton), sans-serif;
   }
 
   /* Improved focus indicators for accessibility */
