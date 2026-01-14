@@ -18,9 +18,9 @@ export default function AboutMeSection() {
                         className="text-center mb-12 md:mb-16 lg:mb-20"
                     >
 
-                        <h1 className="text-xl font-montserrat text-center font-semibold text-brand-orange mb-2">About
+                        <h1 className="text-lg sm:text-xl font-montserrat text-center font-semibold text-brand-orange mb-2">About
                             Me</h1>
-                        <p className="text-4xl font-anton font-bold text-center text-black mb-16">WHO AM I</p>
+                        <p className="text-2xl sm:text-3xl md:text-4xl font-anton font-bold text-center text-black mb-8 md:mb-12 lg:mb-16">WHO AM I</p>
 
                     </motion.div>
 
@@ -34,7 +34,7 @@ export default function AboutMeSection() {
                             transition={{duration: 0.8}}
                             className="flex justify-center lg:justify-start">
                             <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-125 lg:h-125">
-                                {/* Blob Shape Container with Gradient Background */}
+                            {/* Blob Shape Container with Gradient Background */}
                                 <div
                                     className="absolute inset-0 bg-linear-to-br from-orange-400 via-brand-orange to-orange-400"
                                     style={{

@@ -8,14 +8,14 @@ import {Mail, MapPin, Phone} from 'lucide-react';
 export default function ContactSection() {
     return (
         <section id="contact" className="py-16 md:py-20 lg:py-24 bg-gray-50">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
                 <ScrollReveal>
-                    <p className="text-xl font-montserrat text-center font-semibold text-brand-orange mb-2">Contact</p>
-                    <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Let’s Talk About Ideas​</h2>
+                    <p className="text-lg sm:text-xl font-montserrat text-center font-semibold text-brand-orange mb-2">Contact</p>
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 md:mb-12 lg:mb-16">Let's Talk About Ideas​</h2>
                 </ScrollReveal>
 
-                <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+                <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 md:gap-8">
                     {/* Map Section */}
                     <ScrollReveal delay={0.3}>
                         <Card className="p-0 overflow-hidden h-full">
@@ -42,9 +42,9 @@ export default function ContactSection() {
                     {/* Contact Info Card */}
                     <ScrollReveal delay={0.4}>
                         <Card
-                            className="p-8 bg-white hover:shadow-lg transition-shadow duration-300 h-full flex items-center">
+                            className="p-6 md:p-8 bg-white hover:shadow-lg transition-shadow duration-300 h-full flex items-center">
                             <div className="w-full space-y-6">
-                                <h3 className="text-2xl font-montserrat font-bold text-gray-800 mb-6">Message me here</h3>
+                                <h3 className="text-xl md:text-2xl font-montserrat font-bold text-gray-800 mb-4 md:mb-6">Message me here</h3>
 
                                 {/* Mobile Number */}
                                 <div className="flex items-start gap-4">
@@ -82,7 +82,7 @@ export default function ContactSection() {
                                         <MapPin className="w-4 h-4 text-white"/>
                                     </div>
                                     <div className="text-left">
-                                        <h4 className="font-montserrat font-medium text-brand-dark mb-1">Location</h4>
+                                        <h4 className="text-sm font-montserrat font-semibold text-brand-dark mb-1">Location</h4>
                                         <p className="font-normal text-gray-800 ">{about.address}</p>
                                     </div>
                                 </div>

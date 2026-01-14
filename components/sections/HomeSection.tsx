@@ -48,7 +48,7 @@ export default function HomeSection() {
                                     ease: [0.22, 1, 0.36, 1],
                                     delay: 0.3
                                 }}
-                                className="font-montserrat text-sm sm:text-sm md:text-3xl font-bold text-brand-orange mb-6 md:mb-8 lg:mb-12"
+                                className="font-montserrat text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-brand-orange mb-6 md:mb-8 lg:mb-12"
                             >
                                 Hello, <span className="text-brand-dark">I&#39;m</span>
                             </motion.h2>

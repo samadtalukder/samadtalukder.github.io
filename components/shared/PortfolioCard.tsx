@@ -27,7 +27,7 @@ export default function PortfolioCard({name, category, image, url, description}:
                 className="overflow-hidden transition-all duration-500 ease-in-out group cursor-pointer flex flex-col hover:shadow-xl relative">
                 <a href={url} target="_blank" rel="noopener noreferrer"
                    className="h-full flex flex-col transition-transform duration-500 ease-out hover:-translate-y-2">
-                    <div className="relative h-24 overflow-hidden shrink-0">
+                    <div className="relative h-20 sm:h-24 overflow-hidden shrink-0">
                         <Image
                             src={`/images/${image.replace('img/', '')}`}
                             alt={name}
@@ -37,10 +37,10 @@ export default function PortfolioCard({name, category, image, url, description}:
                         <Badge variant="secondary"
                                className="capitalize text-xs absolute top-4 right-4 z-10 bg-brand-orange text-white">{category}</Badge>
                     </div>
-                    <div className="p-4 flex-1 flex flex-col transition-all duration-500 ease-out">
-                        <h3 className="text-lg font-montserrat font-bold text-gray-800 line-clamp-1 mb-1 transition-colors duration-300">{name}</h3>
+                    <div className="p-3 md:p-4 flex-1 flex flex-col transition-all duration-500 ease-out">
+                        <h3 className="text-base md:text-lg font-montserrat font-bold text-gray-800 line-clamp-1 mb-1 transition-colors duration-300">{name}</h3>
                         {description && (
-                            <p className="text-gray-600 text-sm mt-2 line-clamp-2 transition-colors duration-300">{description}</p>
+                            <p className="text-gray-600 text-sm mt-2 line-clamp-1 transition-colors duration-300">{description}</p>
                         )}
                     </div>
                 </a>
